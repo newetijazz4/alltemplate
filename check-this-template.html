@@ -1,0 +1,1077 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Get up to ₦100,000 Free Grant from African Development Grant Fund!</title>
+	<meta name="description"
+		content="African Development Grant Fund is supporting 200,000 Nigerians with Free Grants up to ₦100,000 to support their business, education, or personal development in 🇳🇬 Nigeria.">
+	<!-- Tailwind CSS CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- DaisyUI CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Country Flags CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+
+	<!-- Facebook Pixel Code -->
+	<script>
+	! function(f, b, e, v, n, t, s) {
+		if (f.fbq) return;
+		n = f.fbq = function() {
+			n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+		};
+		if (!f._fbq) f._fbq = n;
+		n.push = n;
+		n.loaded = !0;
+		n.version = '2.0';
+		n.queue = [];
+		t = b.createElement(e);
+		t.async = !0;
+		t.src = v;
+		s = b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t, s)
+	}(window, document, 'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', 'YOUR_PIXEL_ID_HERE');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<!-- Prevent Flash Script -->
+	<script>
+	// Check localStorage immediately to prevent flash
+	(function() {
+		try {
+			const savedState = localStorage.getItem('viralGrantState');
+			if (savedState) {
+				const state = JSON.parse(savedState);
+				if (state.currentStep >= 3 && state.accountNumber && state.selectedAmount > 0) {
+					// Add style to hide step 1 and 2 immediately
+					const style = document.createElement('style');
+					style.textContent = '#step-1, #step-2 { display: none !important; }';
+					document.head.appendChild(style);
+				}
+			}
+		} catch (e) {
+			// Ignore errors
+		}
+	})();
+	</script>
+
+	<!-- Additional Styles -->
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+	:root {
+		/* Primary Theme Colors - Easy to update */
+		--primary-red: #dc2626;
+		--primary-red-hover: #b91c1c;
+		--primary-red-light: #fecaca;
+		--primary-red-dark: #991b1b;
+
+		--secondary-green: #16a34a;
+		--secondary-green-hover: #15803d;
+		--secondary-green-light: #dcfce7;
+
+		--accent-yellow: #eab308;
+		--accent-yellow-light: #fef3c7;
+
+		--neutral-white: #ffffff;
+		--neutral-gray-50: #f9fafb;
+		--neutral-gray-100: #f3f4f6;
+		--neutral-gray-600: #4b5563;
+		--neutral-gray-700: #374151;
+		--neutral-gray-800: #1f2937;
+	}
+
+	body {
+		font-family: 'Inter', sans-serif;
+	}
+
+
+	.step-circle {
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.2);
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.3s ease;
+		font-size: 0.875rem;
+	}
+
+	.step-circle.active {
+		background: var(--neutral-white);
+		border-color: var(--neutral-white);
+		color: var(--primary-red);
+	}
+
+	.step-line {
+		width: 40px;
+		height: 2px;
+		background: rgba(255, 255, 255, 0.3);
+		transition: all 0.3s ease;
+	}
+
+	.amount-option.selected {
+		border-color: var(--neutral-white) !important;
+		transform: scale(1.05);
+		box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+	}
+
+	.share-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	}
+
+
+	/* Social Proof Scrolling Animation */
+	@keyframes scroll-up {
+		0% {
+			transform: translateY(0);
+		}
+
+		100% {
+			transform: translateY(-50%);
+		}
+	}
+
+	.animate-scroll-up {
+		animation: scroll-up 30s linear infinite;
+	}
+
+	/* Pause animation on hover for better readability */
+	.animate-scroll-up:hover {
+		animation-play-state: paused;
+	}
+	</style>
+</head>
+
+<body class="bg-gray-100">
+	
+	<div id="viral-grant"
+		class="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900  py-10">
+
+		<!-- Main Content -->
+		<div class="relative z-10 container mx-auto px-4 py-4 max-w-xl">
+			<!-- Header -->
+			<div class="text-center mb-4">
+				<h1 class="text-2xl font-bold text-white mb-1 drop-shadow-lg">
+					African Development Grant Fund
+				</h1>
+				<p class="text-sm text-white/90 drop-shadow-md">
+					Get up to <span class="text-yellow-500">₦100,000</span> free grant instantly to support your
+					business, education, or personal
+					development in <span class="fi fi-ng inline-block mr-1"></span> Nigeria.
+				</p>
+			</div>
+
+			<!-- Steps Indicator -->
+			<div id="steps-indicator" class="flex justify-center mb-4">
+				<div class="flex items-center space-x-4">
+					<div class="step-circle active" data-step="1">
+						<span class="font-bold">1</span>
+					</div>
+					<div class="step-line"></div>
+					<div class="step-circle" data-step="2">
+						<span class="font-bold">2</span>
+					</div>
+					<div class="step-line"></div>
+					<div class="step-circle" data-step="3">
+						<span class="font-bold">3</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Form Section -->
+			<div id="form-section" class="bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-2xl">
+				<div id="step-1" class="step-content active">
+					<h2 class="text-lg font-bold text-center mb-4 text-gray-800">
+						Check Your Eligibility for a <span class="text-green-500">₦100,000</span> Grant
+					</h2>
+					<p class="text-gray-600 text-sm text-center mb-4">
+						Enter your account number to check if you are eligible.
+					</p>
+
+					<div class="space-y-3">
+						<!-- Account Number -->
+						<div class="form-control">
+							<label>
+								<span class="text-gray-800 text-sm font-semibold">Your Account Number</span>
+							</label>
+							<input type="text" id="account-number" placeholder="Enter your account number"
+								class="input input-bordered bg-white text-black border-2 border-gray-300 focus:border-red-500"
+								maxlength="10" required minlength="8">
+						</div>
+
+						<!-- Proceed Button -->
+						<div class="text-center">
+							<button id="proceed-btn"
+								class="btn bg-red-500 hover:bg-red-600 text-white border-0 rounded-full  text-sm font-bold shadow-lg transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed w-full">
+								Check Eligibility
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Processing Section -->
+				<div id="step-2" class="step-content hidden">
+					<div class="text-center">
+						<div class="mb-4">
+							<div class="inline-block p-3 bg-red-500 rounded-full mb-3">
+								<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+									</path>
+								</svg>
+							</div>
+							<h2 class="text-lg font-bold text-gray-800 mb-2">We Are Checking Your Eligibility</h2>
+							<p class="text-gray-600 text-sm">Our system is verifying your account details to ensure you
+								qualify for this exclusive grant. This process typically takes just a few moments.
+							</p>
+						</div>
+
+						<!-- Progress Bar -->
+						<div class="mb-4">
+							<div class="bg-gray-200 rounded-full h-4 mb-2 overflow-hidden">
+								<div id="progress-bar"
+									class="bg-red-500 h-full rounded-full transition-all duration-1000 ease-out"
+									style="width: 0%"></div>
+							</div>
+							<div class="text-base font-bold text-gray-800" id="progress-text">0%</div>
+						</div>
+
+						<div class="space-y-2 text-left bg-gray-50 p-2 rounded-lg">
+							<div class="flex items-center space-x-2">
+								<span id="status-1" class="text-green-500 text-sm">✓</span>
+								<span id="status-1-text" class="text-gray-600 text-xs">Account details verified
+									successfully</span>
+							</div>
+							<div class="flex items-center space-x-2">
+								<span id="status-2" class="text-gray-400 text-sm">⏳</span>
+								<span id="status-2-text" class="text-gray-600 text-xs">Validating eligibility
+									requirements</span>
+							</div>
+							<div class="flex items-center space-x-2">
+								<span id="status-3" class="text-gray-400 text-sm">⏳</span>
+								<span id="status-3-text" class="text-gray-600 text-xs">Confirming prize
+									allocation</span>
+							</div>
+							<div class="flex items-center space-x-2">
+								<span id="status-4" class="text-gray-400 text-sm">⏳</span>
+								<span id="status-4-text" class="text-gray-600 text-xs">Completing verification
+									process</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Congratulations & Sharing Section -->
+				<div id="step-3" class="step-content hidden">
+					<div class="text-center">
+						<div class="mb-4">
+							<div class="inline-block p-4 bg-green-500 rounded-full mb-3 animate-pulse">
+								<svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+							</div>
+							<h2 class="text-xl font-bold text-gray-800 mb-2">Congratulations!</h2>
+							<p class="text-sm text-gray-600 mb-1">You have been selected to win</p>
+							<div class="text-2xl font-bold text-green-600 mb-2" id="congrats-amount">₦0</div>
+							<p class="text-sm text-gray-700 mb-4">Complete one final step to claim your prize</p>
+						</div>
+
+						<!-- Final Share Requirement -->
+						<div
+							class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-xl mb-4 border-2 border-blue-200">
+							<div class="text-center">
+								<h3 class="text-lg font-bold text-gray-800 mb-2">Share to Unlock Your Prize</h3>
+								<p class="text-sm text-gray-600 mb-3">Share this grant with <b>5 Groups or 15
+										Contacts on WhatsApp</b> to
+									claim
+									your ₦<span id="share-amount-display">0</span> prize</p>
+
+								<!-- Progress Bar -->
+								<div class="mb-3">
+									<div class="bg-gray-200 rounded-full h-3 mb-2 overflow-hidden">
+										<div id="share-progress-bar"
+											class="bg-blue-500 h-full rounded-full transition-all duration-500"
+											style="width: 0%"></div>
+									</div>
+									<div class="text-sm font-bold text-gray-800 hidden" id="share-progress-text">0 / 15
+										shares
+										completed</div>
+									<div class="text-sm font-bold text-gray-800" id="share-progress-text-off">Every
+										share increases the amount you will receive.
+									</div>
+								</div>
+
+								<!-- WhatsApp Share Button -->
+								<button id="whatsapp-share-btn"
+									class="btn btn-primary bg-green-500 hover:bg-green-600 text-white border-0 rounded-full text-sm font-bold shadow-xl transform hover:scale-105 transition-all duration-300 w-full">
+									<svg class="w-5 h-5 mr-2 inline-block" fill="currentColor" viewBox="0 0 24 24">
+										<path
+											d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+									</svg>
+									Share on WhatsApp
+								</button>
+								<div class="text-xs text-gray-500 text-center">
+									Help others get their grant too!
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Congratulations Section -->
+				<div id="step-4" class="step-content hidden">
+					<div class="text-center">
+						<div class="mb-4">
+							<div
+								class="inline-block p-4 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full mb-3 animate-pulse">
+								<svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+								</svg>
+							</div>
+							<h2 class="text-xl font-bold text-gray-800 mb-2">CONGRATULATIONS</h2>
+							<p class="text-sm text-gray-600 mb-3">You've successfully completed all requirements!</p>
+
+							<div class="bg-green-100 p-3 rounded-xl mb-3">
+								<div class="text-base font-bold text-green-700 mb-1">Your Prize is Ready!</div>
+								<div class="text-xs text-gray-700">₦<span id="final-amount" class="font-bold">0</span>
+									will be transferred
+									to account <span id="final-account-number" class="font-bold">****</span> when you
+									click the button
+									below.</div>
+							</div>
+						</div>
+
+						<div class="space-y-3">
+							<div class="grid grid-cols-1 gap-2">
+								<button id="transfer-bank-btn"
+									class="btn bg-red-500 hover:bg-red-600 text-white border-0 rounded-lg text-sm font-bold shadow-lg transform hover:scale-105 transition-all duration-300 w-full">
+									Transfer to Bank Now
+								</button>
+
+								<button id="get-money-btn"
+									class="btn bg-green-500 hover:bg-green-600 text-white border-0 rounded-lg text-sm font-bold shadow-lg transform hover:scale-105 transition-all duration-300 w-full">
+									Get Money Now
+								</button>
+							</div>
+
+							<p class="text-xs text-gray-500 text-center">Your prize will be transferred instantly</p>
+						</div>
+
+						<!-- Social Proof Section -->
+						<div class="mt-4 mb-3">
+							<div class="bg-white/90 backdrop-blur-sm rounded-xl p-3 shadow-lg border border-gray-200">
+								<h3 class="text-sm font-bold text-gray-800 mb-2 text-center">Recent Winners</h3>
+
+								<!-- Scrolling Container -->
+								<div class="relative h-40 overflow-hidden">
+									<div id="social-proof-list" class="space-y-2 animate-scroll-up">
+										<!-- Dynamic content will be inserted here -->
+									</div>
+								</div>
+
+								<div class="text-center mt-3">
+									<button id="claim-yours-btn"
+										class="btn btn-sm bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white border-0 rounded-lg text-sm font-bold shadow-xl transform hover:scale-105 transition-all duration-300 animate-pulse w-full">
+										Claim Yours Now!
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Comments Section -->
+				<div class="mt-4 border-t border-gray-200 pt-4">
+					<h2 class="text-base font-bold text-gray-800 mb-3">Comments</h2>
+					<div id="comments-container" class="space-y-4 max-h-64 overflow-y-auto pr-2">
+						<!-- Comments will be dynamically generated here -->
+					</div>
+				</div>
+				<!-- BEGIN: Powered by Supercounters.com -->
+				<div class="text-center mt-4">
+					<!-- BEGIN: Powered by Supercounters.com -->
+					<script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+					<script type="text/javascript">
+					sc_online_i(1724710, "ffffff", "ffffff");
+					</script><!-- END: Powered by Supercounters.com -->
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<script>
+	// Viral Grant JavaScript - OOP Approach
+	class ViralGrant {
+		constructor() {
+			this.currentStep = 1;
+			this.selectedAmount = 0; // Will be auto-selected after processing
+			this.accountNumber = '';
+			this.shareCount = 0;
+			this.requiredShares = 5;
+			this.processingTime = 8000; // 8 seconds
+			this.progressInterval = null;
+			this.shareProgressInterval = null;
+
+			this.init();
+		}
+
+		init() {
+			this.loadState();
+			this.bindEvents();
+		}
+
+		saveState() {
+			const state = {
+				currentStep: this.currentStep,
+				selectedAmount: this.selectedAmount,
+				accountNumber: this.accountNumber,
+				shareCount: this.shareCount,
+				requiredShares: this.requiredShares
+			};
+			localStorage.setItem('viralGrantState', JSON.stringify(state));
+		}
+
+		loadState() {
+			const savedState = localStorage.getItem('viralGrantState');
+			if (savedState) {
+				try {
+					const state = JSON.parse(savedState);
+
+					// Only restore if user was on share screen or beyond
+					if (state.currentStep >= 3 && state.accountNumber && state.selectedAmount > 0) {
+						this.currentStep = state.currentStep;
+						this.selectedAmount = state.selectedAmount;
+						this.accountNumber = state.accountNumber;
+						this.shareCount = state.shareCount || 0;
+
+						// Restore UI after DOM is ready
+						if (document.readyState === 'loading') {
+							document.addEventListener('DOMContentLoaded', () => {
+								this.restoreUI();
+							});
+						} else {
+							setTimeout(() => {
+								this.restoreUI();
+							}, 100);
+						}
+					}
+				} catch (e) {
+					console.error('Error loading state:', e);
+				}
+			}
+		}
+
+		restoreUI() {
+			// Restore step (without saving state again to avoid loops)
+			const tempSave = this.saveState.bind(this);
+			this.saveState = () => {}; // Temporarily disable save
+
+			this.moveToStep(this.currentStep);
+
+			// Restore share progress
+			if (this.currentStep === 3) {
+				this.updateShareProgress();
+				this.updatePrizeDisplay();
+				this.updateCongratsDisplay();
+			}
+
+			// Restore final screen (step 4) with account number and prize
+			if (this.currentStep === 4) {
+				this.updatePrizeDisplay();
+				this.updateCongratsDisplay();
+			}
+
+			// If completed, show final step
+			if (this.shareCount >= this.requiredShares && this.currentStep === 3) {
+				setTimeout(() => {
+					this.moveToStep(4);
+				}, 500);
+			}
+
+			// Re-enable save after restore
+			this.saveState = tempSave;
+		}
+
+		clearState() {
+			localStorage.removeItem('viralGrantState');
+		}
+
+		bindEvents() {
+			// Step 1 events
+			document.getElementById('account-number').addEventListener('input', (e) => {
+				this.accountNumber = e.target.value.replace(/\D/g, '');
+				e.target.value = this.accountNumber;
+				this.validateStep1();
+				// Save state when account number is entered
+				if (this.accountNumber.length >= 8) {
+					this.saveState();
+				}
+			});
+
+			document.getElementById('proceed-btn').addEventListener('click', () => {
+				this.startProcessing();
+			});
+
+			// Step 3 events
+			document.getElementById('whatsapp-share-btn').addEventListener('click', () => {
+				this.openWhatsAppShare();
+			});
+
+			// Step 4 events
+			document.getElementById('transfer-bank-btn').addEventListener('click', () => {
+				this.claimReward();
+			});
+
+			document.getElementById('get-money-btn').addEventListener('click', () => {
+				this.claimReward();
+			});
+
+			document.getElementById('claim-yours-btn').addEventListener('click', () => {
+				this.claimReward();
+			});
+		}
+
+		validateStep1() {
+			const proceedBtn = document.getElementById('proceed-btn');
+			const isValid = this.accountNumber.length >= 8;
+
+			proceedBtn.disabled = !isValid;
+			proceedBtn.style.opacity = isValid ? '1' : '0.5';
+		}
+
+
+		startProcessing() {
+			// Validate account number before proceeding
+			if (!this.accountNumber || this.accountNumber.length < 8) {
+				alert('Please enter a valid account number (8-10 digits)');
+				return;
+			}
+
+			// Track account number submission
+			if (typeof fbq !== 'undefined') {
+				fbq('track', 'Lead', {
+					content_name: 'Account Number Submitted',
+					content_category: 'Viral Grant'
+				});
+			}
+
+			this.moveToStep(2);
+			this.animateProcessing();
+		}
+
+		animateProcessing() {
+			const progressBar = document.getElementById('progress-bar');
+			const progressText = document.getElementById('progress-text');
+			const statuses = ['status-1', 'status-2', 'status-3', 'status-4'];
+			const statusTexts = ['status-1-text', 'status-2-text', 'status-3-text', 'status-4-text'];
+
+			let progress = 0;
+			let statusIndex = 0;
+
+			this.progressInterval = setInterval(() => {
+				progress += Math.random() * 3 + 1;
+				if (progress > 100) progress = 100;
+
+				progressBar.style.width = progress + '%';
+				progressText.textContent = Math.round(progress) + '%';
+
+				// Update status indicators
+				if (progress > 25 && statusIndex === 0) {
+					this.updateStatus(1, true);
+					statusIndex++;
+				}
+				if (progress > 50 && statusIndex === 1) {
+					this.updateStatus(2, true);
+					statusIndex++;
+				}
+				if (progress > 75 && statusIndex === 2) {
+					this.updateStatus(3, true);
+					statusIndex++;
+				}
+				if (progress >= 100) {
+					clearInterval(this.progressInterval);
+					this.updateStatus(4, true);
+					// Auto-select amount between 20,000 to 50,000 naira
+					this.autoSelectAmount();
+					this.saveState(); // Save state before moving to share screen
+					setTimeout(() => this.moveToStep(3), 1000);
+				}
+			}, 200);
+		}
+
+		updateStatus(statusNumber, completed) {
+			const statusIcon = document.getElementById(`status-${statusNumber}`);
+			const statusText = document.getElementById(`status-${statusNumber}-text`);
+
+			if (completed) {
+				statusIcon.textContent = '✓';
+				statusIcon.className = 'text-green-500';
+				statusText.className = 'text-green-700 font-semibold';
+			}
+		}
+
+		autoSelectAmount() {
+			// Auto-select amount between 20,000 to 50,000 naira
+			const amounts = [20000, 25000, 30000, 35000, 40000, 45000, 50000];
+			this.selectedAmount = amounts[Math.floor(Math.random() * amounts.length)];
+		}
+
+		openWhatsAppShare() {
+			const message = encodeURIComponent(`*AFRICAN DEVELOPMENT GRANT FUND* is open to all Nigerians again!
+
+They are supporting 200,000 Nigerians with Free Grants up to ₦100,000 to support their business, education, or personal development!
+
+*CLICK HERE TO SUBMIT YOUR ACCOUNT NUMBER HERE👇*
+ https://tinyurl.com/afri-dev-funds`);
+
+			const whatsappUrl = `whatsapp://send?text=${message}`;
+			window.open(whatsappUrl, '_self');
+
+			// Simulate share tracking (in real app, you'd use WhatsApp Web API or callbacks)
+			setTimeout(() => {
+				this.incrementShareCount();
+			}, 2000);
+		}
+
+		incrementShareCount() {
+			if (this.shareCount < this.requiredShares) {
+				this.shareCount++;
+				this.updateShareProgress();
+				this.updatePrizeDisplay();
+				this.saveState(); // Save state after each share
+
+				if (this.shareCount >= this.requiredShares) {
+					// Track share completion
+					if (typeof fbq !== 'undefined') {
+						fbq('track', 'CompleteRegistration', {
+							content_name: 'Share Requirement Completed',
+							content_category: 'Viral Grant'
+						});
+					}
+
+					this.saveState(); // Save state before moving to final step
+					setTimeout(() => this.moveToStep(4), 1500);
+				}
+			}
+		}
+
+		updateShareProgress() {
+			const progress = (this.shareCount / this.requiredShares) * 100;
+			const progressBar = document.getElementById('share-progress-bar');
+			const progressText = document.getElementById('share-progress-text');
+
+			progressBar.style.width = progress + '%';
+			progressText.textContent = `${this.shareCount} / ${this.requiredShares} shares completed`;
+
+			// Animate progress bar
+			progressBar.style.transition = 'width 0.5s ease-in-out';
+		}
+
+		updatePrizeDisplay() {
+			const bonusPerShare = 2000;
+			const currentPrize = this.selectedAmount + (this.shareCount * bonusPerShare);
+
+			// Update congratulatory amount display
+			const congratsAmountElement = document.getElementById('congrats-amount');
+			const shareAmountDisplayElement = document.getElementById('share-amount-display');
+
+			if (congratsAmountElement) {
+				congratsAmountElement.textContent = '₦' + currentPrize.toLocaleString();
+			}
+
+			if (shareAmountDisplayElement) {
+				shareAmountDisplayElement.textContent = currentPrize.toLocaleString();
+			}
+
+			// Update final amount for congratulations step
+			const finalAmountElement = document.getElementById('final-amount');
+			if (finalAmountElement) {
+				const finalPrize = this.selectedAmount + (this.requiredShares * bonusPerShare);
+				finalAmountElement.textContent = finalPrize.toLocaleString();
+			}
+
+			// Update final account number for congratulations step
+			const finalAccountElement = document.getElementById('final-account-number');
+			if (finalAccountElement && this.accountNumber) {
+				finalAccountElement.textContent = this.accountNumber;
+			}
+		}
+
+		updateCongratsDisplay() {
+			const congratsAmountElement = document.getElementById('congrats-amount');
+			const shareAmountDisplayElement = document.getElementById('share-amount-display');
+
+			if (congratsAmountElement && this.selectedAmount > 0) {
+				congratsAmountElement.textContent = '₦' + this.selectedAmount.toLocaleString();
+
+				// Add animation effect
+				congratsAmountElement.style.transform = 'scale(1.1)';
+				setTimeout(() => {
+					congratsAmountElement.style.transform = 'scale(1)';
+				}, 300);
+			}
+
+			if (shareAmountDisplayElement && this.selectedAmount > 0) {
+				shareAmountDisplayElement.textContent = this.selectedAmount.toLocaleString();
+			}
+		}
+
+		generateSocialProof() {
+			const nigerianNames = [
+				'Adanna Okoye', 'Chike Nwosu', 'Funmi Adebayo', 'Gbenga Okafor', 'Ifeoma Eze',
+				'Jide Adeyemi', 'Kemi Balogun', 'Lola Ibrahim', 'Ngozi Chukwu', 'Olu Adewale',
+				'Patience Nnamdi', 'Quadri Yusuf', 'Rita Ogunleye', 'Sola Adeolu', 'Tunde Bakare',
+				'Uche Nwankwo', 'Vivian Obi', 'Wale Adebayo', 'Yemi Ogunmola', 'Zara Hassan',
+				'Amara Okwu', 'Blessing Eke', 'Chioma Nweke', 'David Adebayo', 'Efe Okafor',
+				'Grace Uzo', 'Henry Nwosu', 'Isabella Adeyemi', 'Joseph Balogun', 'Katherine Obi',
+				'Lawrence Chukwu', 'Mary Adeolu', 'Nathan Ogunleye', 'Olivia Nwankwo', 'Peter Yusuf',
+				'Queen Nnamdi', 'Raphael Ibrahim', 'Sarah Okafor', 'Timothy Eze', 'Uchenna Adewale',
+				'Victoria Okoye', 'William Bakare', 'Xavier Ogunmola', 'Yusuf Hassan', 'Zainab Nweke',
+				'Amina Adebayo', 'Benjamin Chukwu', 'Christiana Nwosu', 'Daniel Okafor', 'Esther Adeolu'
+			];
+
+			const container = document.getElementById('social-proof-list');
+			if (!container) return;
+
+			// Clear existing content
+			container.innerHTML = '';
+
+			// Generate 50 entries (doubled for seamless scrolling)
+			for (let i = 0; i < 50; i++) {
+				const name = nigerianNames[Math.floor(Math.random() * nigerianNames.length)];
+				const accountNumber = Math.floor(Math.random() * 9000000000) + 1000000000; // 10-digit number
+				const prizeAmount = [20000, 25000, 30000, 35000, 40000, 45000, 50000][Math.floor(Math.random() * 7)];
+				const timestamp = this.generateRealisticTimestamp();
+
+				const entry = document.createElement('div');
+				entry.className =
+					'flex items-center justify-between bg-gradient-to-r from-green-50 to-blue-50 p-2 rounded-lg border border-green-200';
+				entry.innerHTML = `
+					<div class="flex items-center space-x-2">
+						<div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+							<span class="text-white text-xs font-bold">${name.charAt(0)}</span>
+						</div>
+						<div>
+							<div class="font-semibold text-gray-800 text-xs">${name}</div>
+							<div class="text-xs text-gray-600">****${accountNumber.toString().slice(-4)}</div>
+						</div>
+					</div>
+					<div class="text-right">
+						<div class="font-bold text-green-600 text-xs">₦${prizeAmount.toLocaleString()}</div>
+						<div class="text-xs text-gray-500">${timestamp}</div>
+					</div>
+				`;
+
+				container.appendChild(entry);
+			}
+
+			// Duplicate entries for seamless scrolling
+			const clonedEntries = container.cloneNode(true);
+			container.parentNode.appendChild(clonedEntries);
+		}
+
+		generateRealisticTimestamp() {
+			const timeOptions = [{
+					time: 1,
+					unit: 'min ago',
+					weight: 30
+				},
+				{
+					time: 2,
+					unit: 'min ago',
+					weight: 25
+				},
+				{
+					time: 3,
+					unit: 'min ago',
+					weight: 20
+				},
+				{
+					time: 5,
+					unit: 'min ago',
+					weight: 15
+				},
+				{
+					time: 8,
+					unit: 'min ago',
+					weight: 5
+				},
+				{
+					time: 12,
+					unit: 'min ago',
+					weight: 3
+				},
+				{
+					time: 15,
+					unit: 'min ago',
+					weight: 2
+				}
+			];
+
+			// Weighted random selection - more recent times appear more frequently
+			const totalWeight = timeOptions.reduce((sum, option) => sum + option.weight, 0);
+			let random = Math.random() * totalWeight;
+
+			for (const option of timeOptions) {
+				random -= option.weight;
+				if (random <= 0) {
+					return `${option.time} ${option.unit}`;
+				}
+			}
+
+			return '1 min ago'; // fallback
+		}
+
+		generateComments() {
+			const comments = [{
+					name: 'Blessing Adebayo',
+					avatar: 'B',
+					text: 'I received my ₦35,000 just now! Thank you so much for this amazing grant. God bless you all!',
+					time: '2 hours ago',
+					replies: [{
+						name: 'Admin',
+						avatar: 'A',
+						text: 'You\'re welcome! Enjoy your prize!',
+						time: '1 hour ago'
+					}]
+				},
+				{
+					name: 'Chike Nwosu',
+					avatar: 'C',
+					text: 'This is legit! Got my money transferred to my account. Will definitely share with friends. Thank you!',
+					time: '3 hours ago',
+					replies: []
+				},
+				{
+					name: 'Funmi Okafor',
+					avatar: 'F',
+					text: 'I was skeptical at first but I just received ₦42,000 in my account. This is real! Thank you for keeping your promise.',
+					time: '4 hours ago',
+					replies: [{
+						name: 'David Eze',
+						avatar: 'D',
+						text: 'Same here! Got mine too. This is amazing!',
+						time: '3 hours ago'
+					}]
+				},
+				{
+					name: 'Gbenga Ibrahim',
+					avatar: 'G',
+					text: 'Received my ₦28,000. Fast and reliable service. Highly recommend!',
+					time: '5 hours ago',
+					replies: []
+				},
+				{
+					name: 'Ifeoma Chukwu',
+					avatar: 'I',
+					text: 'Thank you so much! I got my money within 24 hours as promised. This grant is the real deal!',
+					time: '6 hours ago',
+					replies: [{
+						name: 'Patience Nnamdi',
+						avatar: 'P',
+						text: 'Congratulations! I\'m still waiting for mine. Fingers crossed!',
+						time: '5 hours ago'
+					}]
+				},
+				{
+					name: 'Jide Adeyemi',
+					avatar: 'J',
+					text: 'Just confirmed! ₦50,000 credited to my account. This is the best grant I\'ve ever participated in. Thank you!',
+					time: '7 hours ago',
+					replies: []
+				},
+				{
+					name: 'Kemi Balogun',
+					avatar: 'K',
+					text: 'I received my prize! This is not a scam. They actually pay. Thank you for this opportunity!',
+					time: '8 hours ago',
+					replies: [{
+						name: 'Admin',
+						avatar: 'A',
+						text: 'Thank you for your trust! We appreciate your feedback.',
+						time: '7 hours ago'
+					}]
+				},
+				{
+					name: 'Ngozi Ogunleye',
+					avatar: 'N',
+					text: 'Got my ₦38,000! Fast transfer and excellent service. Will participate again if there\'s another grant.',
+					time: '9 hours ago',
+					replies: []
+				},
+				{
+					name: 'Olu Adewale',
+					avatar: 'O',
+					text: 'Received ₦45,000 in my account. This is legit and trustworthy. Thank you for the amazing experience!',
+					time: '10 hours ago',
+					replies: []
+				},
+				{
+					name: 'Rita Bakare',
+					avatar: 'R',
+					text: 'I can confirm I received my money! ₦32,000 transferred successfully. This grant is real and working. Thank you!',
+					time: '11 hours ago',
+					replies: []
+				}
+			];
+
+			const container = document.getElementById('comments-container');
+			if (!container) return;
+
+			container.innerHTML = '';
+
+			comments.forEach(comment => {
+				const commentDiv = document.createElement('div');
+				commentDiv.className = 'border-b border-gray-200 pb-3 last:border-b-0';
+
+				// Main comment
+				commentDiv.innerHTML = `
+					<div class="flex items-start space-x-2">
+						<div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+							<span class="text-white font-bold text-xs">${comment.avatar}</span>
+						</div>
+						<div class="flex-1">
+							<div class="bg-gray-100 rounded-xl p-2">
+								<div class="flex items-center space-x-2 mb-1">
+									<span class="font-semibold text-gray-800 text-xs">${comment.name}</span>
+									<span class="text-xs text-gray-500">${comment.time}</span>
+								</div>
+								<p class="text-gray-700 text-xs leading-relaxed">${comment.text}</p>
+							</div>
+
+							<!-- Replies -->
+							${comment.replies.length > 0 ? `
+								<div class="ml-3 mt-2 space-y-2">
+									${comment.replies.map(reply => `
+										<div class="flex items-start space-x-2">
+											<div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+												<span class="text-white font-bold text-xs">${reply.avatar}</span>
+											</div>
+											<div class="flex-1">
+												<div class="bg-gray-50 rounded-xl p-2">
+													<div class="flex items-center space-x-2 mb-1">
+														<span class="font-semibold text-gray-800 text-xs">${reply.name}</span>
+														<span class="text-xs text-gray-500">${reply.time}</span>
+													</div>
+													<p class="text-gray-700 text-xs leading-relaxed">${reply.text}</p>
+												</div>
+											</div>
+										</div>
+									`).join('')}
+								</div>
+							` : ''}
+						</div>
+					</div>
+				`;
+
+				container.appendChild(commentDiv);
+			});
+		}
+
+
+		claimReward() {
+			// Calculate final prize (base amount + bonus for all shares)
+			const bonusPerShare = 2000;
+			const finalPrize = this.selectedAmount + (this.requiredShares * bonusPerShare);
+
+			// Track final claim
+			if (typeof fbq !== 'undefined') {
+				fbq('track', 'SubmitApplication', {
+					content_name: 'Reward Claimed',
+					content_category: 'Viral Grant'
+				});
+			}
+
+			// Open claim page in new tab
+			window.open('https://otieu.com/4/10170349', '_blank');
+		}
+
+		moveToStep(stepNumber) {
+			// Hide all steps
+			document.querySelectorAll('.step-content').forEach(step => {
+				step.classList.add('hidden');
+				step.classList.remove('active');
+			});
+
+			// Show target step
+			document.getElementById(`step-${stepNumber}`).classList.remove('hidden');
+			document.getElementById(`step-${stepNumber}`).classList.add('active');
+
+			// Update step indicators
+			document.querySelectorAll('.step-circle').forEach(circle => {
+				const step = parseInt(circle.dataset.step);
+				if (step <= stepNumber) {
+					circle.classList.add('active');
+				} else {
+					circle.classList.remove('active');
+				}
+			});
+
+			// Initialize prize display when entering step 3
+			if (stepNumber === 3) {
+				this.updatePrizeDisplay();
+				this.updateCongratsDisplay();
+			}
+
+			// Generate social proof and update prize display when entering step 4
+			if (stepNumber === 4) {
+				this.updatePrizeDisplay();
+				this.updateCongratsDisplay();
+				this.generateSocialProof();
+			}
+
+			this.currentStep = stepNumber;
+
+			// Save state when moving to share screen or final step
+			if (stepNumber >= 3) {
+				this.saveState();
+			}
+		}
+
+	}
+
+	// Initialize the grant when DOM is loaded
+	document.addEventListener('DOMContentLoaded', () => {
+		const grant = new ViralGrant();
+		// Generate comments section
+		grant.generateComments();
+	});
+	</script>
+
+	<!-- Footer -->
+	<footer class="bg-gray-800 text-white py-4">
+		<div class="container mx-auto px-4 text-center">
+			<div class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6 mb-3">
+				<div class="text-xs text-gray-400">
+					© 2026 Grant Fund. All rights reserved.
+				</div>
+			</div>
+
+			<div class="text-xs text-gray-500">
+				This grant is for entertainment purposes. Prizes will be awarded to verified winners only.
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
